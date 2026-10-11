@@ -1,0 +1,3 @@
+[functions]
+  # System prompt của Trợ lý AI được function chat đọc lúc chạy.
+  included_files = ["netlify/functions/prompts/**"]

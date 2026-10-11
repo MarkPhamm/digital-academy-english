@@ -7,17 +7,20 @@ type ChatMessage = ChatTurn & {
   id: number;
   /** "streaming": đang nhận câu trả lời; "error": câu trả lời lỗi (không gửi lại trong lịch sử). */
   status?: "streaming" | "error";
+  /** Lỗi do hỏi quá nhiều trong một giờ: hỏi lại ngay cũng không được nên ẩn nút "Thử lại". */
+  limited?: boolean;
 };
 
 const GREETING = "Chào bạn! Mình là Trợ lý AI 🤖 Bạn cần mình giúp gì về bài học hôm nay?";
 const NETWORK_ERROR = "Mất kết nối rồi. Bạn kiểm tra mạng và thử lại nhé!";
+const SERVER_ERROR = "Ôi, mình gặp chút trục trặc. Bạn hỏi lại giúp mình nhé!";
 
 // Vị trí theo khung 1440×900: mascot ở (1284,566) 110×124; khung chat nằm ngay phía trên, sát mép phải.
 const PANEL = { left: 976, top: 128, width: 424, height: 424 };
 
 let nextId = 0;
 
-/** Mascot Trợ lý AI ở góc phải Trang chủ; bấm vào mở khung trò chuyện với Claude (route /api/chat). */
+/** Mascot Trợ lý AI ở góc phải Trang chủ; bấm vào mở khung trò chuyện với Claude (Netlify Function /api/chat). */
 export function AiChat() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -59,8 +62,8 @@ export function AiChat() {
     const controller = new AbortController();
     abortRef.current = controller;
 
-    const finish = (status?: "error", content?: string) =>
-      updateMessage(replyId, (m) => ({ ...m, status, content: content ?? m.content }));
+    const finish = (status?: "error", content?: string, limited?: boolean) =>
+      updateMessage(replyId, (m) => ({ ...m, status, limited, content: content ?? m.content }));
 
     try {
       const response = await fetch("/api/chat", {
@@ -76,7 +79,7 @@ export function AiChat() {
       });
       if (!response.ok || !response.body) {
         const data = await response.json().catch(() => null);
-        finish("error", data?.error ?? NETWORK_ERROR);
+        finish("error", data?.error ?? SERVER_ERROR, response.status === 429);
         return;
       }
 
@@ -124,6 +127,14 @@ export function AiChat() {
     void ask(messages.filter((m) => m.status !== "error"));
   };
 
+  // Xoá hội thoại để bắt đầu chủ đề mới; dừng câu trả lời đang chạy nếu có.
+  const restart = () => {
+    abortRef.current?.abort();
+    abortRef.current = null;
+    setMessages([]);
+    inputRef.current?.focus();
+  };
+
   const onInputKeyDown = (event: KeyboardEvent<HTMLTextAreaElement>) => {
     if (event.key === "Enter" && !event.shiftKey && !event.nativeEvent.isComposing) send(event);
   };
@@ -157,14 +168,24 @@ export function AiChat() {
         >
           <header className="flex h-[56px] shrink-0 items-center justify-between bg-gradient-to-b from-[rgba(42,99,222,0.92)] to-[rgba(19,50,127,0.62)] px-[20px]">
             <h2 className="text-[20px] font-bold leading-none">Trợ lý AI</h2>
-            <button
-              type="button"
-              aria-label="Đóng"
-              onClick={() => setOpen(false)}
-              className="flex size-[32px] cursor-pointer items-center justify-center rounded-full text-[22px] leading-none text-white/80 outline-none transition-colors hover:bg-white/15 hover:text-white focus-visible:bg-white/15"
-            >
-              ×
-            </button>
+            <div className="flex items-center gap-[6px]">
+              <button
+                type="button"
+                onClick={restart}
+                disabled={messages.length === 0}
+                className="h-[32px] cursor-pointer rounded-full bg-white/15 px-[12px] text-[14px] font-bold outline-none transition-colors hover:bg-white/25 focus-visible:bg-white/25 disabled:cursor-default disabled:opacity-40 disabled:hover:bg-white/15"
+              >
+                ↺ Bắt đầu lại
+              </button>
+              <button
+                type="button"
+                aria-label="Đóng"
+                onClick={() => setOpen(false)}
+                className="flex size-[32px] cursor-pointer items-center justify-center rounded-full text-[22px] leading-none text-white/80 outline-none transition-colors hover:bg-white/15 hover:text-white focus-visible:bg-white/15"
+              >
+                ×
+              </button>
+            </div>
           </header>
 
           <div
@@ -176,7 +197,7 @@ export function AiChat() {
             {messages.map((message) => (
               <Bubble key={message.id} role={message.role} error={message.status === "error"}>
                 {message.status === "streaming" && !message.content ? <TypingDots /> : message.content}
-                {message.status === "error" && (
+                {message.status === "error" && !message.limited && (
                   <button
                     type="button"
                     onClick={retry}

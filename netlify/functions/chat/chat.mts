@@ -1,26 +1,23 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
-import { CHAT_LIMITS, type ChatStreamEvent, type ChatTurn } from "@/lib/chat";
+import type { Config, Context } from "@netlify/functions";
+import { CHAT_LIMITS, type ChatStreamEvent, type ChatTurn } from "../../../src/lib/chat";
+import { consume } from "./rate-limit";
 
 // Trợ lý AI trên Trang chủ học sinh: nhận lịch sử hội thoại (chỉ phần chữ), stream câu trả lời của Claude về
-// dạng NDJSON — mỗi dòng một sự kiện ChatStreamEvent.
+// dạng NDJSON — mỗi dòng một sự kiện ChatStreamEvent. API key chỉ đọc từ biến môi trường phía server.
+
+export const config: Config = { path: "/api/chat", method: "POST" };
 
 const MODEL = "claude-opus-5-5";
-// Hỏi đáp ngắn cho học sinh: effort "low" cho phản hồi nhanh. max_tokens tính cả phần suy nghĩ của model.
+// Hỏi đáp ngắn cho học sinh: effort "low" cho phản hồi nhanh. Opus 5.5 luôn suy nghĩ trước khi trả lời và
+// max_tokens tính cả phần suy nghĩ đó, nên system prompt yêu cầu câu trả lời ngắn để vừa giới hạn.
 const EFFORT = "low";
-const MAX_TOKENS = 8192;
+const MAX_TOKENS = 400;
 
-const SYSTEM_PROMPT = `Bạn là "Trợ lý AI" của Digital Academy — một người bạn đồng hành học tập của học sinh tiểu học và trung học cơ sở Việt Nam (khoảng 6–15 tuổi). Các em đang học các khóa như Tiếng Anh, Toán tư duy, Tiếng Việt, Tin học, Khoa học tự nhiên, Mỹ thuật và lập trình Scratch.
-
-Cách trò chuyện:
-- Trả lời bằng tiếng Việt, xưng "mình" và gọi học sinh là "bạn". Nếu học sinh viết bằng tiếng Anh hoặc đang luyện tiếng Anh, có thể trả lời bằng tiếng Anh đơn giản kèm giải thích tiếng Việt.
-- Câu trả lời ngắn gọn, dễ hiểu với trẻ em, giọng vui vẻ và khích lệ. Ưu tiên ví dụ gần gũi trong đời sống.
-- Khi học sinh hỏi bài tập, hãy gợi ý từng bước để các em tự nghĩ ra đáp án thay vì đưa ngay lời giải; nếu các em vẫn bí sau khi được gợi ý thì giải thích đầy đủ.
-- Khung chat chỉ hiển thị chữ thường: không dùng Markdown (không dùng **, #, bảng). Có thể xuống dòng, dùng gạch đầu dòng "-" và một vài emoji.
-
-An toàn:
-- Chỉ nói về nội dung phù hợp với trẻ em. Với chủ đề không phù hợp, nhẹ nhàng từ chối và gợi ý quay lại chuyện học.
-- Không hỏi hay khuyến khích chia sẻ thông tin cá nhân (họ tên đầy đủ, địa chỉ, số điện thoại, trường lớp, mật khẩu, ảnh).
-- Nếu học sinh nói mình đang buồn, sợ hãi, bị bắt nạt hay gặp nguy hiểm, hãy đồng cảm và khuyên các em nói ngay với bố mẹ, thầy cô hoặc người lớn mà các em tin tưởng.`;
+// File được đóng gói cùng function nhờ included_files trong netlify.toml.
+const PROMPT_FILE = "netlify/functions/prompts/tutor.txt";
 
 const MESSAGES = {
   invalid: "Tin nhắn không hợp lệ.",
@@ -28,33 +25,53 @@ const MESSAGES = {
   busy: "Nhiều bạn đang hỏi cùng lúc quá. Bạn đợi một chút rồi hỏi lại nhé!",
   failed: "Ôi, mình gặp chút trục trặc. Bạn hỏi lại giúp mình nhé!",
   refusal: "Câu này mình không trả lời được. Mình cùng nói về chuyện học nhé! 📚",
+  limited: (minutes: number) =>
+    `Bạn đã hỏi mình ${CHAT_LIMITS.messagesPerHour} câu trong một giờ rồi đó! 🌟 Mình nghỉ một chút nhé, khoảng ${minutes} phút nữa mình lại trò chuyện tiếp.`,
 };
 
 let client: Anthropic | null = null;
+let systemPrompt: Promise<string> | null = null;
 
 function getClient() {
-  // Khởi tạo lúc có request đầu tiên (không phải lúc build), đọc ANTHROPIC_API_KEY từ môi trường.
+  // Khởi tạo lúc có request đầu tiên, đọc ANTHROPIC_API_KEY từ môi trường.
   client ??= new Anthropic();
   return client;
+}
+
+function loadSystemPrompt() {
+  // Khi chạy `netlify dev` thư mục làm việc là gốc project; khi deploy, file nằm cạnh bundle của function.
+  const candidates = [path.resolve(PROMPT_FILE), new URL(`../../../${PROMPT_FILE}`, import.meta.url)];
+  systemPrompt ??= (async () => {
+    for (const file of candidates) {
+      try {
+        return (await readFile(file, "utf8")).trim();
+      } catch {
+        // Thử vị trí tiếp theo.
+      }
+    }
+    throw new Error(`Không tìm thấy ${PROMPT_FILE}`);
+  })().catch((error) => {
+    systemPrompt = null;
+    throw error;
+  });
+  return systemPrompt;
 }
 
 function parseHistory(body: unknown): ChatTurn[] | null {
   if (typeof body !== "object" || body === null || !("messages" in body) || !Array.isArray(body.messages)) return null;
   const turns: ChatTurn[] = [];
-  for (const item of body.messages as unknown[]) {
+  // Chỉ giữ các tin gần nhất và cắt bớt tin quá dài để một yêu cầu không thể đẩy chi phí lên cao.
+  for (const item of (body.messages as unknown[]).slice(-CHAT_LIMITS.maxHistoryMessages)) {
     if (typeof item !== "object" || item === null) return null;
     const { role, content } = item as Record<string, unknown>;
     if ((role !== "user" && role !== "assistant") || typeof content !== "string") return null;
-    const text = content.trim();
-    if (!text || text.length > CHAT_LIMITS.maxMessageChars) return null;
-    turns.push({ role, content: text });
+    const text = content.trim().slice(0, CHAT_LIMITS.maxMessageChars);
+    if (text) turns.push({ role, content: text });
   }
-  // Giới hạn đầu vào để một yêu cầu không thể đẩy chi phí lên quá cao: chỉ giữ các lượt gần nhất.
-  const recent = turns.slice(-CHAT_LIMITS.maxHistoryMessages);
   // Hội thoại gửi lên API phải bắt đầu và kết thúc bằng lượt của học sinh.
-  while (recent[0]?.role === "assistant") recent.shift();
-  if (recent.at(-1)?.role !== "user") return null;
-  return recent;
+  while (turns[0]?.role === "assistant") turns.shift();
+  if (turns.at(-1)?.role !== "user") return null;
+  return turns;
 }
 
 function errorMessage(error: unknown) {
@@ -69,7 +86,7 @@ function errorMessage(error: unknown) {
   return MESSAGES.failed;
 }
 
-export async function POST(request: Request) {
+export default async function handler(request: Request, context: Context) {
   let history: ChatTurn[] | null = null;
   try {
     history = parseHistory(await request.json());
@@ -78,6 +95,31 @@ export async function POST(request: Request) {
   }
   if (!history) return Response.json({ error: MESSAGES.invalid }, { status: 400 });
 
+  try {
+    const limit = await consume(context.ip, CHAT_LIMITS.messagesPerHour);
+    if (!limit.allowed && limit.reason === "contention") {
+      return Response.json({ error: MESSAGES.busy }, { status: 429, headers: { "Retry-After": "5" } });
+    }
+    if (!limit.allowed) {
+      return Response.json(
+        { error: MESSAGES.limited(Math.max(1, Math.ceil(limit.retryAfterSeconds / 60))) },
+        { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } },
+      );
+    }
+  } catch (error) {
+    // Kho Blobs lỗi: vẫn cho học sinh hỏi, chỉ ghi log.
+    console.error("[chat] rate limit", error);
+  }
+
+  let system: string;
+  try {
+    system = await loadSystemPrompt();
+  } catch (error) {
+    console.error("[chat]", error);
+    return Response.json({ error: MESSAGES.unavailable }, { status: 500 });
+  }
+
+  const turns = history;
   const encoder = new TextEncoder();
   const send = (controller: ReadableStreamDefaultController<Uint8Array>, event: ChatStreamEvent) =>
     controller.enqueue(encoder.encode(`${JSON.stringify(event)}\n`));
@@ -94,8 +136,9 @@ export async function POST(request: Request) {
             // Nếu bộ lọc an toàn của model chính từ chối, API tự chạy lại trên model dự phòng phù hợp.
             betas: ["server-side-fallback-2026-07-01"],
             fallbacks: "default",
-            system: SYSTEM_PROMPT,
-            messages: history,
+            // System prompt giống hệt nhau ở mọi yêu cầu nên được cache, các lượt sau chỉ tốn ~1/10 giá đọc.
+            system: [{ type: "text", text: system, cache_control: { type: "ephemeral" } }],
+            messages: turns,
           },
           { signal: request.signal },
         );
@@ -109,14 +152,18 @@ export async function POST(request: Request) {
         }
 
         const message = await stream.finalMessage();
+        const { input_tokens, output_tokens, cache_read_input_tokens, cache_creation_input_tokens } = message.usage;
+        console.log("[chat] usage", { input_tokens, output_tokens, cache_read_input_tokens, cache_creation_input_tokens });
         if (message.stop_reason === "refusal") {
           send(controller, { type: "reset" });
           send(controller, { type: "text", text: MESSAGES.refusal });
+        } else if (message.stop_reason === "max_tokens") {
+          send(controller, { type: "text", text: "…" });
         }
         send(controller, { type: "done", stopReason: message.stop_reason });
       } catch (error) {
         if (request.signal.aborted) return;
-        console.error("[api/chat]", error);
+        console.error("[chat]", error);
         send(controller, { type: "error", message: errorMessage(error) });
       } finally {
         try {

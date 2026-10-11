@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
+    "@netlify/blobs": "^11.1.4",
     "@rive-app/react-canvas": "^4.36.0",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@netlify/functions": "^6.0.2",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
