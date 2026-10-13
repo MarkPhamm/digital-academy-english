@@ -11,6 +11,17 @@ const eslintConfig = defineConfig([
     files: ["src/components/home/**/*.tsx"],
     rules: { "@next/next/no-img-element": "off" },
   },
+  {
+    // Engine game port từ repo Edtech-game: ghi ref trong lúc render và setState trong effect là cố ý
+    // (đồng bộ với vòng lặp canvas). Giữ nguyên code gốc, tắt các rule của React Compiler ở đây.
+    files: ["src/components/game/**/*.{ts,tsx}", "src/app/\\(game\\)/**/*.{ts,tsx}", "src/lib/game/**/*.ts"],
+    rules: {
+      "react-hooks/refs": "off",
+      "react-hooks/set-state-in-effect": "off",
+      "react-hooks/immutability": "off",
+      "react-hooks/purity": "off",
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:

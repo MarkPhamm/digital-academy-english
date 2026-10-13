@@ -1,4 +1,7 @@
+import Link from "next/link";
+import { CoinsPill } from "./CoinsPill";
 import { CurrencyIcon } from "./CurrencyIcon";
+import { CurrencyPill } from "./CurrencyPill";
 
 type Tab = {
   id: string;
@@ -33,15 +36,19 @@ function ProfileCard() {
         />
       </div>
 
-      {/* Avatar */}
-      <div className="absolute left-[135px] top-[20px] h-[98px] w-[100px] overflow-clip">
+      {/* Avatar — bấm để mở shop trang phục của game */}
+      <Link
+        href="/skins"
+        aria-label="Trang phục nhân vật"
+        className="absolute left-[135px] top-[20px] block h-[98px] w-[100px] overflow-clip transition-[filter] duration-200 hover:brightness-110 focus-visible:brightness-110"
+      >
         <img src="/home/header/avatar-ring.svg" alt="" className="absolute left-0 top-0 size-[100px]" />
         <img
           src="/home/header/avatar.webp"
           alt="Ảnh đại diện"
           className="absolute left-1/2 top-[calc(50%+1px)] size-[88px] -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
         />
-      </div>
+      </Link>
 
       {/* Bảng tên */}
       <div className="absolute left-[calc(50%+0.29px)] top-[80px] h-[38.476px] w-[160.586px] -translate-x-1/2">
@@ -59,7 +66,7 @@ function ProfileCard() {
 
       {/* Xu */}
       <div className="absolute left-[15px] top-[44px] h-[32px] w-[108px]">
-        <CurrencyPill className="left-[16px]" textClassName="left-[24px]" value="10.200" label="Xu" />
+        <CoinsPill />
         <CurrencyIcon kind="coin" className="left-0 top-0" />
       </div>
 
@@ -68,20 +75,6 @@ function ProfileCard() {
         <CurrencyPill className="left-0" textClassName="left-[13px]" value="32.880" label="Kim cương" />
         <CurrencyIcon kind="gem" className="left-[74px] top-0" />
       </div>
-    </div>
-  );
-}
-
-function CurrencyPill({ className, textClassName, value, label }: { className: string; textClassName: string; value: string; label: string }) {
-  return (
-    <div
-      className={`absolute top-1/2 h-[28px] w-[92px] -translate-y-1/2 overflow-clip rounded-[8px] bg-[#0054d3] shadow-[0px_1px_2px_0px_rgba(13,255,255,0.35)] ${className}`}
-    >
-      <p className={`absolute top-[calc(50%-14px)] whitespace-nowrap text-[18px] font-bold leading-[28px] text-white ${textClassName}`}>
-        <span className="sr-only">{label}: </span>
-        {value}
-      </p>
-      <div className="pointer-events-none absolute inset-0 rounded-[inherit] shadow-[inset_0px_1px_4px_0px_#00039c]" />
     </div>
   );
 }

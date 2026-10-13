@@ -1,6 +1,6 @@
 # digital-academy
 
-Trang học tập Digital Academy cho học sinh, viết bằng Next.js và deploy trên Netlify.
+Trang học tập Digital Academy cho học sinh, viết bằng Next.js và deploy trên Netlify. Gồm Trang chủ (carousel hành tinh, Trợ lý AI) và trò chơi học tập "Vũ trụ Tri thức".
 
 ## Trợ lý AI (chatbot)
 
@@ -22,6 +22,30 @@ Cách hoạt động:
 - Mỗi địa chỉ IP được gửi 30 tin mỗi giờ. Bộ đếm lưu trong Netlify Blobs (store `chat-rate-limit`, chỉ lưu mã băm của IP). Khi vượt giới hạn, học sinh thấy thông báo bằng tiếng Việt và thời gian chờ.
 - Nếu Blobs tạm thời lỗi, function vẫn trả lời và ghi log, để học sinh không bị chặn nhầm.
 - Sửa nội dung trả lời của trợ lý trong `tutor.txt`, không cần sửa code. Nên giữ prompt dài trên khoảng 512 token, vì prompt ngắn hơn sẽ không được cache.
+
+## Trò chơi Vũ trụ Tri thức
+
+Bấm vào hành tinh ở giữa carousel (hoặc ruy-băng tên khóa) để vào game học tập chuyển từ repo `Edtech-game`: bản đồ thế giới 2.5D, mỗi level 10 câu hỏi rải trên bản đồ, level 5 của Cyber World là trận đánh boss. Bốn hành tinh có game: Tiếng Anh lớp 3 → `tieng-anh`, Toán tư duy → `toan-ly-hoa`, Tin học → `ai-cong-nghe`, Lập trình Scratch → `cyber-world` (xem `worldSlug` trong `src/data/courses.ts`). Ba hành tinh còn lại báo "sắp mở".
+
+| Thành phần | Vị trí |
+|---|---|
+| Các trang game `/world/:slug`, `/play/:levelId`, `/result/:id`, `/review/:slug`, `/skins` | `src/app/(game)/` (CSS riêng `game.css`, bọc dưới `.vt`) |
+| Engine canvas, bản đồ, boss, thẻ câu hỏi (port nguyên văn) | `src/components/game/` |
+| Netlify Function `/api/game/*` (router dùng chung với route handler của Next) | `netlify/functions/game/game.mts`, `router.ts` |
+| Luật chơi, xu, giá trang phục | `src/lib/game/rules.ts`, `src/lib/game/skins.ts` |
+| Ngân hàng câu hỏi (chỉ function import — có đáp án) | `src/data/game/questions/` |
+| Kiểu dữ liệu API, client fetch, kho hồ sơ phía trình duyệt | `src/lib/game/api-types.ts`, `client.ts`, `profile-store.ts` |
+
+Cách hoạt động:
+
+- Chưa có đăng nhập: function cấp cookie `da_device` (UUID, httpOnly, 1 năm) ở lần gọi đầu tiên; hồ sơ lưu trong Netlify Blobs (store `game-profiles`, key là mã băm của UUID). Muốn thay bằng đăng nhập thật chỉ cần sửa `identity.ts`.
+- Đáp án đúng chỉ nằm ở server. Trình duyệt nhận 10 câu (không có đáp án), gửi từng câu lên để chấm; câu trả lời đầu tiên là cuối cùng.
+- **Xu**: mỗi câu trả lời đúng được 10 xu, nhưng chỉ thưởng **lần đầu** câu đó được trả lời đúng (chơi lại hay ôn tập đều theo luật này). Trả lời sai không mất xu.
+- **Trang phục**: Spartan miễn phí; 9 bộ còn lại giá 100 → 300 xu, khoá cho tới khi mua. Mua xong mặc luôn. Shop ở `/skins`, mở từ nút "Trang phục" trong game hoặc bấm avatar ở Trang chủ.
+- Sao, mở level, ôn câu sai giữ đúng luật repo gốc: đúng ≥ 7/10 là qua level, 7–8 = ★, 9 = ★★, 10 = ★★★; level sau mở khi level trước qua.
+- Mọi thao tác ghi dùng compare-and-swap theo etag của Blobs nên bấm hai lần / mở hai tab không cộng xu hay trừ xu hai lần.
+
+Chạy local: game chạy được cả với `npm run dev` trần (route handler `src/app/api/game/[...path]/route.ts` dùng chung bộ định tuyến `netlify/functions/game/router.ts`; không có Blobs thì hồ sơ lưu tạm ở `.netlify/blobs-dev/`) lẫn `netlify dev` (Blobs giả lập ở `.netlify/blobs-serve`). Reset hồ sơ test: xoá thư mục tương ứng hoặc xoá cookie `da_device` trong trình duyệt.
 
 ## Cấu hình trên Netlify
 

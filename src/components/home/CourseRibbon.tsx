@@ -8,7 +8,7 @@ const MIN_FONT_SIZE = 16;
 const MAX_TEXT_WIDTH = 264;
 
 /** Ruy-băng tên khóa học: luôn 1 dòng, tự co cỡ chữ khi tên dài (tối thiểu 16px, sau đó cắt "…"). */
-export function CourseRibbon({ name }: { name: string }) {
+export function CourseRibbon({ name, onClick }: { name: string; onClick?: () => void }) {
   const textRef = useRef<HTMLSpanElement>(null);
 
   useLayoutEffect(() => {
@@ -35,6 +35,7 @@ export function CourseRibbon({ name }: { name: string }) {
   return (
     <button
       type="button"
+      onClick={onClick}
       className="group absolute left-[35px] top-[340px] h-[130px] w-[351px] cursor-pointer outline-none transition-[filter,transform] duration-200 ease-out hover:-translate-y-[2px] hover:brightness-110 focus-visible:brightness-110 active:translate-y-0"
     >
       <img src="/home/planets/ribbon.webp" alt="" className="pointer-events-none absolute inset-0 size-full object-cover" />
