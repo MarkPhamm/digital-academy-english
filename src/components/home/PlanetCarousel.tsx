@@ -378,6 +378,7 @@ export function PlanetCarousel({ courses }: { courses: Course[] }) {
               opacity: slot.opacity,
               zIndex: slot.z,
               visibility: visible ? "visible" : "hidden",
+              filter: course.planetHue ? `hue-rotate(${course.planetHue}deg)` : undefined,
             }}
             onClick={isSide ? () => go(Math.sign(offset)) : isCenter ? () => openCourse(course) : undefined}
           >

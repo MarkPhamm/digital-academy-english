@@ -1,3 +1,4 @@
+import { getWorldMeta } from "@/lib/game/worlds";
 import * as S from "./sprites";
 import { T, hashString, makeCanvas, rng } from "./sprites";
 
@@ -133,6 +134,11 @@ export const THEMES: Record<string, Theme> = {
   },
 };
 
+/** Giao diện bản đồ của một hành tinh: theo `look` trong WORLD_META (nhiều hành tinh dùng chung một kiểu). */
+export function themeFor(slug: string): Theme {
+  return THEMES[getWorldMeta(slug)?.look ?? slug] ?? THEMES["toan-ly-hoa"];
+}
+
 export function isSolid(c: Cell): boolean {
   return c.ground === "water" || c.ground === "wall" || c.obj !== null;
 }
@@ -149,7 +155,7 @@ function pickWeighted<T extends { w: number }>(items: T[], r: () => number): T {
 
 /** Sinh bản đồ cố định cho mỗi thế giới (cùng thế giới → cùng bản đồ). */
 export function generateMap(slug: string): GameMap {
-  const theme = THEMES[slug] ?? THEMES["toan-ly-hoa"];
+  const theme = themeFor(slug);
   const r = rng(hashString(slug));
   const W = MAP_W;
   const H = MAP_H;
@@ -167,13 +173,13 @@ export function generateMap(slug: string): GameMap {
   }
 
   // Nước
-  if (slug === "tieng-anh") {
+  if (theme.slug === "tieng-anh") {
     for (let x = 0; x < W; x++) {
       const shore = H - 5 - Math.round(Math.sin(x / 4) * 1.2 + (r() < 0.3 ? 1 : 0));
       for (let y = shore; y < H; y++) cells[y][x].ground = "water";
       for (let y = shore - 2; y < shore; y++) if (y > 0) cells[y][x].ground = "sand";
     }
-  } else if (slug === "toan-ly-hoa") {
+  } else if (theme.slug === "toan-ly-hoa") {
     const ponds = [
       { x: 9, y: 7, rx: 4, ry: 2.6 },
       { x: 34, y: 20, rx: 4.5, ry: 2.8 },

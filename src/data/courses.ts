@@ -1,3 +1,5 @@
+import { WORLD_META, isWorldSlug } from "@/lib/game/worlds";
+
 export type CoursePlanetRive = {
   src: string;
   artboard: string;
@@ -13,35 +15,39 @@ export type Course = {
   /** Ảnh tĩnh: hiển thị khi chưa tải xong Rive, khi bật "giảm chuyển động", và cho các khóa chưa có Rive. */
   planetImage: string;
   planetRive?: CoursePlanetRive;
+  /** Xoay màu ảnh tĩnh (độ) — để hai hành tinh dùng chung ảnh vẫn khác nhau. */
+  planetHue?: number;
   /** Thế giới trong game "Vũ trụ Tri thức" mở ra khi bấm hành tinh; chưa có thì báo "sắp mở". */
   worldSlug?: string;
 };
 
-// Dữ liệu mock. Thứ tự hành tinh theo 7 frame "Khóa học 1…7" trong Figma; tên khóa là tên giả.
-// Hành tinh băng của file Rive "Tieng_Viet_1" trùng art với ảnh uranus.webp nên Tiếng Việt và Khoa học đổi ảnh cho nhau.
-export const courses: Course[] = [
-  {
-    id: "english-3",
-    name: "Tiếng Anh lớp 3",
-    worldSlug: "tieng-anh",
+// Mỗi hành tinh là một trình độ tiếng Anh, theo thứ tự WORLD_META; tên lấy từ WORLD_META.
+// Có 7 ảnh hành tinh cho 8 trình độ nên C2 dùng lại ảnh Sao Kim, xoay màu cho khác B1.
+// Hành tinh băng của file Rive "Tieng_Viet_1" trùng art với ảnh uranus.webp.
+const PLANET_ART: Record<string, Omit<Course, "id" | "name" | "worldSlug">> = {
+  "lop-5": {
     planetImage: "/home/planets/earth.webp", // Trái Đất
     planetRive: { src: "/home/planets/rive/english.riv", artboard: "English_New", center: { x: 960, y: 528 }, scale: 0.55 },
   },
-  {
-    id: "math",
-    name: "Toán tư duy",
-    worldSlug: "toan-ly-hoa",
+  "lop-6": {
     planetImage: "/home/planets/mars.webp", // Sao Hỏa
     planetRive: { src: "/home/planets/rive/math.riv", artboard: "Math_1", center: { x: 960, y: 540 }, scale: 0.6 },
   },
-  {
-    id: "vietnamese",
-    name: "Tiếng Việt",
+  "lop-7": {
     planetImage: "/home/planets/uranus.webp", // Sao Thiên Vương
     planetRive: { src: "/home/planets/rive/vietnamese.riv", artboard: "Tieng_Viet_1", center: { x: 950, y: 555 }, scale: 0.74 },
   },
-  { id: "it", name: "Tin học", planetImage: "/home/planets/mercury.webp", worldSlug: "ai-cong-nghe" }, // Sao Thủy
-  { id: "science", name: "Khoa học tự nhiên", planetImage: "/home/planets/venus.webp" }, // Sao Kim
-  { id: "art", name: "Mỹ thuật sáng tạo", planetImage: "/home/planets/neptune.webp" }, // Sao Hải Vương
-  { id: "scratch", name: "Lập trình Scratch cho các bạn nhỏ", planetImage: "/home/planets/gj-504b.webp", worldSlug: "cyber-world" }, // GJ 504 b
-];
+  "lop-8": { planetImage: "/home/planets/mercury.webp" }, // Sao Thủy
+  b1: { planetImage: "/home/planets/venus.webp" }, // Sao Kim
+  b2: { planetImage: "/home/planets/neptune.webp" }, // Sao Hải Vương
+  c1: { planetImage: "/home/planets/gj-504b.webp" }, // GJ 504 b
+  c2: { planetImage: "/home/planets/venus.webp", planetHue: 200 }, // Sao Kim đổi màu
+};
+
+export const courses: Course[] = WORLD_META.map((w) => ({
+  id: w.slug,
+  name: w.name,
+  // Chưa có file CSV thì không gắn game → bấm vào báo "sắp mở".
+  worldSlug: isWorldSlug(w.slug) ? w.slug : undefined,
+  ...(PLANET_ART[w.slug] ?? { planetImage: "/home/planets/earth.webp" }),
+}));

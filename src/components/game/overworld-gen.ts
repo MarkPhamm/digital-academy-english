@@ -1,4 +1,4 @@
-import { type Cell, type GameMap, THEMES, isSolid } from "./mapgen";
+import { type Cell, type GameMap, isSolid, themeFor } from "./mapgen";
 import { canStep, inStop } from "./movement";
 import { carveRiver } from "./river";
 import { type TreeHouse, clearTreeHouseArea, placeTreeHouse } from "./treehouse";
@@ -64,7 +64,7 @@ function makeNoise(r: () => number, w: number, h: number) {
 
 /** Bản đồ cố định cho mỗi thế giới: con đường ngoằn ngoèo leo đồi từ dưới lên, nhà level 1..n rồi tới kho báu trên đỉnh. */
 export function buildOverworld(slug: string, levelCount: number): OverworldMap {
-  const theme = THEMES[slug] ?? THEMES["toan-ly-hoa"];
+  const theme = themeFor(slug);
   const r = rng(hashString(slug + ":overworld"));
   const W = MAP_W;
   const H = GAP * levelCount + 9;

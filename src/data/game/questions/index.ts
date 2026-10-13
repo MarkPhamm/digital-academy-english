@@ -1,16 +1,14 @@
 /**
  * Ngân hàng câu hỏi đã đánh chỉ mục, id tất định (không cần database).
- *  - levelId    = `${slug}-L${n}`        (n = 1..5)
- *  - questionId = `${slug}-L${n}-Q${i}`  (i = 1..15)
+ * Nguồn: content/english/<slug>.csv → generated/banks.json (scripts/build-questions.mjs). Mỗi chủ đề trong CSV là một level.
+ *  - levelId    = `${slug}-L${n}`        (n = 1..số chủ đề)
+ *  - questionId = `${slug}-L${n}-Q${i}`  (i = 1..số câu của chủ đề)
  * CHỈ Netlify Function được import file này: nó chứa đáp án đúng.
  */
-import { LEVELS_PER_WORLD } from "../../../lib/game/rules";
+import { QUESTIONS_PER_LEVEL } from "../../../lib/game/rules";
 import { WORLD_META, levelId } from "../../../lib/game/worlds";
-import ai from "./ai-cong-nghe";
-import cyber from "./cyber-world";
-import english from "./tieng-anh";
-import math from "./toan-ly-hoa";
-import type { QuestionRow, WorldBank } from "./types";
+import banks from "./generated/banks.json";
+import type { GeneratedQuestion, WorldBank } from "./types";
 
 export type QuestionType = "MCQ" | "TRUE_FALSE";
 
@@ -41,21 +39,28 @@ export type BankWorld = {
 export { levelId };
 export const questionId = (slug: string, n: number, i: number) => `${slug}-L${n}-Q${i}`;
 
-const BANKS: WorldBank[] = [ai, math, english, cyber];
+const BANKS = banks as WorldBank[];
 
-function rowToQuestion(row: QuestionRow, slug: string, n: number, i: number): BankQuestion {
+const TRUE_FALSE_LABELS = { vi: ["Đúng", "Sai"], en: ["True", "False"] };
+
+function toQuestion(q: GeneratedQuestion, slug: string, lang: "vi" | "en", n: number, i: number): BankQuestion {
   const base = { id: questionId(slug, n, i), levelId: levelId(slug, n), worldSlug: slug, levelNumber: n, index: i };
-  if (row[0] === "m") {
-    return { ...base, type: "MCQ", prompt: row[1], options: [...row[2]], correctIndex: row[3], explanation: row[4] };
+  if (q.type === "MCQ") {
+    return { ...base, type: "MCQ", prompt: q.prompt, options: [...q.options], correctIndex: q.correctIndex, explanation: q.explanation };
   }
-  return { ...base, type: "TRUE_FALSE", prompt: row[1], options: ["Đúng", "Sai"], correctIndex: row[2] ? 0 : 1, explanation: row[3] };
+  return { ...base, type: "TRUE_FALSE", prompt: q.prompt, options: [...TRUE_FALSE_LABELS[lang]], correctIndex: q.correct ? 0 : 1, explanation: q.explanation };
 }
 
+/** Hành tinh chưa có file CSV thì bỏ qua (Trang chủ báo "sắp mở") thay vì làm hỏng cả game. */
 function buildWorlds(): BankWorld[] {
-  return WORLD_META.map((meta) => {
+  return WORLD_META.flatMap((meta) => {
     const bank = BANKS.find((b) => b.slug === meta.slug);
-    if (!bank) throw new Error(`Thiếu ngân hàng câu hỏi cho thế giới ${meta.slug}`);
-    if (bank.levels.length !== LEVELS_PER_WORLD) throw new Error(`Thế giới ${meta.slug} phải có đúng ${LEVELS_PER_WORLD} level`);
+    if (!bank) {
+      console.warn(`[game] Chưa có content/english/${meta.slug}.csv — hành tinh ${meta.slug} tạm ẩn.`);
+      return [];
+    }
+    const thin = bank.levels.find((lv) => lv.questions.length < QUESTIONS_PER_LEVEL);
+    if (thin) throw new Error(`Chủ đề "${thin.title}" của ${meta.slug} cần ít nhất ${QUESTIONS_PER_LEVEL} câu`);
     const levels: BankLevel[] = bank.levels.map((lv, li) => {
       const n = li + 1;
       return {
@@ -63,10 +68,11 @@ function buildWorlds(): BankWorld[] {
         worldSlug: meta.slug,
         number: n,
         title: lv.title,
-        questions: lv.questions.map((row, qi) => rowToQuestion(row, meta.slug, n, qi + 1)),
+        questions: lv.questions.map((q, qi) => toQuestion(q, meta.slug, meta.lang, n, qi + 1)),
       };
     });
-    return { ...meta, levels };
+    const { slug, name, subtitle, color, order } = meta;
+    return { slug, name, subtitle, color, order, levels };
   });
 }
 
