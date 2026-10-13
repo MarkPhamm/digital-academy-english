@@ -154,7 +154,7 @@ export default function BossGame({ levelId, worldSlug, avatarColor, skin }: { le
     try {
       const r = await fetch(`/api/game/attempts/${data.attemptId}/finish`, { method: "POST" });
       if (!r.ok) throw new Error();
-      router.push(`/result/${data.attemptId}`);
+      router.replace(`/result/${data.attemptId}`);
     } catch {
       setFinishing(false);
       setToast("Không nộp được bài, em thử lại nhé.");
