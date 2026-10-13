@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, type PointerEvent } from "react";
 import type { Course } from "@/data/courses";
 import { AnimatedPlanetImage } from "./AnimatedPlanetImage";
@@ -99,6 +100,25 @@ export function PlanetCarousel({ courses }: { courses: Course[] }) {
 
   const activeIndex = mod(target, n);
   const activeCourse = courses[activeIndex];
+
+  // Bấm hành tinh giữa (hoặc ruy-băng tên khóa) → vào game "Vũ trụ Tri thức"; khóa chưa có game thì báo nhẹ.
+  const router = useRouter();
+  const [toast, setToast] = useState<string | null>(null);
+  const openCourse = useCallback(
+    (course: Course) => {
+      if (course.worldSlug) router.push(`/world/${course.worldSlug}`);
+      else setToast("Hành tinh này sắp mở, em quay lại sau nhé! 🚀");
+    },
+    [router],
+  );
+  useEffect(() => {
+    if (!toast) return;
+    const t = window.setTimeout(() => setToast(null), 2200);
+    return () => window.clearTimeout(t);
+  }, [toast]);
+  useEffect(() => {
+    if (activeCourse.worldSlug) router.prefetch(`/world/${activeCourse.worldSlug}`);
+  }, [activeCourse.worldSlug, router]);
 
   const stopAnimation = useCallback(() => {
     if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
@@ -352,14 +372,14 @@ export function PlanetCarousel({ courses }: { courses: Course[] }) {
           <div
             key={course.id}
             aria-hidden={index !== activeIndex}
-            className={`absolute left-0 top-0 size-[420px] will-change-transform ${isSide ? "cursor-pointer" : ""}`}
+            className={`absolute left-0 top-0 size-[420px] will-change-transform ${isSide || isCenter ? "cursor-pointer" : ""}`}
             style={{
               transform: `translate(${slot.x - 210}px, ${slot.y - AREA_TOP - 210}px) scale(${slot.size / CENTER.size})`,
               opacity: slot.opacity,
               zIndex: slot.z,
               visibility: visible ? "visible" : "hidden",
             }}
-            onClick={isSide ? () => go(Math.sign(offset)) : undefined}
+            onClick={isSide ? () => go(Math.sign(offset)) : isCenter ? () => openCourse(course) : undefined}
           >
             {course.planetRive ? (
               <RivePlanet
@@ -384,8 +404,18 @@ export function PlanetCarousel({ courses }: { courses: Course[] }) {
 
       {/* Ruy-băng gắn với vị trí giữa: khung hành tinh giữa nằm ở (510,172) */}
       <div className="absolute z-[200]" style={{ left: 510, top: 172 - AREA_TOP }}>
-        <CourseRibbon name={activeCourse.name} />
+        <CourseRibbon name={activeCourse.name} onClick={() => openCourse(activeCourse)} />
       </div>
+
+      {toast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="absolute left-1/2 top-[470px] z-[300] -translate-x-1/2 whitespace-nowrap rounded-full bg-[#1c2358]/90 px-5 py-2 text-[16px] font-bold text-white shadow-lg"
+        >
+          {toast}
+        </div>
+      )}
 
       <p aria-live="polite" className="sr-only">
         {`Khóa học ${activeIndex + 1}/${n}: ${activeCourse.name}`}
