@@ -10,7 +10,7 @@ export const metadata = { title: "Đang chơi · Vũ trụ Tri thức" };
 // nên vẫn vào tức thì. Tắt kiểm tra "instant" của dev overlay cho segment này.
 export const instant = false;
 
-/** 20 level cố định → prerender sẵn; id lạ trả 404 thật. Level còn khoá vẫn do client báo (cần hồ sơ). */
+/** Mọi level (sinh từ CSV lúc build) → prerender sẵn; id lạ trả 404 thật. Level còn khoá vẫn do client báo (cần hồ sơ). */
 export function generateStaticParams() {
   return ALL_LEVEL_IDS.map((levelId) => ({ levelId }));
 }

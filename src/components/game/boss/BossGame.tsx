@@ -22,7 +22,7 @@ const DPAD = [
   { cls: "down", key: "arrowdown", label: "▼" },
 ];
 
-/** Màn đánh boss (level boss của Cyber World): đánh boss để rơi Mảnh mã, nhặt Mảnh mã để trả lời câu hỏi. */
+/** Màn đánh boss (level cuối của mỗi hành tinh): đánh boss để rơi Mảnh mã, nhặt Mảnh mã để trả lời câu hỏi. */
 export default function BossGame({ levelId, worldSlug, avatarColor, skin }: { levelId: string; worldSlug: string; avatarColor: string; skin: string }) {
   const router = useRouter();
   const canvasRef = useRef<HTMLCanvasElement>(null);

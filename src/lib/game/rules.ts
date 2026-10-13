@@ -1,7 +1,8 @@
 /** Luật chơi — dùng chung cho Netlify Function và giao diện. Chỉ import tương đối (function không hiểu alias "@/"). */
+import { levelCount } from "./worlds";
+
+/** Mỗi lượt rút 10 câu từ chủ đề của level (scripts/build-questions.mjs bắt mỗi chủ đề có ít nhất chừng ấy câu). */
 export const QUESTIONS_PER_LEVEL = 10;
-/** Mỗi thế giới có đúng 5 level (ngân hàng câu hỏi phải khớp). */
-export const LEVELS_PER_WORLD = 5;
 export const PASS_RATIO = 0.7; // đúng ≥ 70% thì qua level và mở level sau
 
 export function passMark(total: number): number {
@@ -16,11 +17,9 @@ export function starsFor(correct: number, total: number): number {
   return 1;
 }
 
-/** Level boss (đánh boss thời gian thực thay cho bản đồ hỏi NPC). Ôn tập vẫn dùng màn thường. */
-export const BOSS_LEVEL = { worldSlug: "cyber-world", number: 5 };
-
+/** Level cuối mỗi hành tinh là level boss (đánh boss thời gian thực thay cho bản đồ hỏi NPC). Ôn tập vẫn dùng màn thường. */
 export function isBossLevel(worldSlug: string, number: number): boolean {
-  return worldSlug === BOSS_LEVEL.worldSlug && number === BOSS_LEVEL.number;
+  return number === levelCount(worldSlug);
 }
 
 export const AVATAR_COLORS = ["#ef5a5a", "#3b82f6", "#2fbf71", "#f59e0b", "#a855f7", "#ec4899"];

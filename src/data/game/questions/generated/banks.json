@@ -1,0 +1,4322 @@
+[
+ {
+  "slug": "b1",
+  "levels": [
+   {
+    "title": "Past Continuous vs Past Simple",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I ___ dinner when the phone rang.\"",
+      "options": [
+       "am cooking",
+       "was cooking",
+       "have cooked",
+       "cook"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use the past continuous for a longer action that was in progress when a shorter action (past simple) interrupted it."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"As soon as the bell rang, the students ___ the classroom.\"",
+      "options": [
+       "left",
+       "were leaving",
+       "leave",
+       "are leaving"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use the past simple for a completed action that happened right after another one (\"as soon as\" shows a sequence)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"I was knowing the answer, but I didn't say anything.\"",
+      "correct": false,
+      "explanation": "Stative verbs like \"know\" are not normally used in continuous forms. The correct sentence is \"I knew the answer, but I didn't say anything.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"This time yesterday, we ___ on a beach in Spain.\"",
+      "options": [
+       "lie",
+       "are lying",
+       "have lain",
+       "were lying"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use the past continuous for an action in progress at a specific time in the past, such as \"this time yesterday\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"She ___ her ankle while she was playing tennis.\"",
+      "options": [
+       "was hurting",
+       "hurts",
+       "hurt",
+       "is hurting"
+      ],
+      "correctIndex": 2,
+      "explanation": "The short, sudden event uses the past simple (\"hurt\"); the longer background action uses the past continuous (\"was playing\")."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"While Tom was reading, his sister was watching TV.\"",
+      "correct": true,
+      "explanation": "Two past actions happening at the same time can both be in the past continuous, often joined with \"while\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"Sorry, I didn't hear you. I ___ to music on my headphones.\"",
+      "options": [
+       "was listening",
+       "listen",
+       "am listened",
+       "have listened"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use the past continuous to describe what you were in the middle of doing when something else happened."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Which sentence is correct?",
+      "options": [
+       "\"When I was arriving, they had lunch.\"",
+       "\"When I arrived, they are having lunch.\"",
+       "\"When I arrived, they were having lunch.\"",
+       "\"When I arrive, they were having lunch.\""
+      ],
+      "correctIndex": 2,
+      "explanation": "The short action (\"arrived\") is in the past simple and the action already in progress (\"were having lunch\") is in the past continuous."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"When I was seeing the accident, I called the police.\"",
+      "correct": false,
+      "explanation": "\"See\" is a short, completed action here and is not normally used in the continuous. Say \"When I saw the accident, I called the police.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The sun ___ and the birds were singing when we woke up.\"",
+      "options": [
+       "shines",
+       "was shining",
+       "is shining",
+       "has shone"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use the past continuous to describe the background scene of a story in the past."
+     }
+    ]
+   },
+   {
+    "title": "Conditionals: 1st & 2nd",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If it ___ tomorrow, we will stay at home.\"",
+      "options": [
+       "will rain",
+       "rained",
+       "rains",
+       "would rain"
+      ],
+      "correctIndex": 2,
+      "explanation": "In the first conditional, use the present simple in the if-clause and \"will\" + verb in the main clause."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If I ___ a million dollars, I would travel around the world.\"",
+      "options": [
+       "had",
+       "have",
+       "will have",
+       "would have"
+      ],
+      "correctIndex": 0,
+      "explanation": "In the second conditional, use the past simple in the if-clause and \"would\" + verb in the main clause for imaginary situations."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"If I will see Anna, I will tell her the news.\"",
+      "correct": false,
+      "explanation": "Don't use \"will\" in the if-clause of a first conditional. The correct sentence is \"If I see Anna, I will tell her the news.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If you don't hurry, you ___ the bus.\"",
+      "options": [
+       "would miss",
+       "missed",
+       "are missing",
+       "will miss"
+      ],
+      "correctIndex": 3,
+      "explanation": "This is a real, likely situation, so it is a first conditional: present simple in the if-clause, \"will\" + verb in the result."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If I were you, I ___ to the doctor.\"",
+      "options": [
+       "will go",
+       "would go",
+       "go",
+       "went"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"If I were you\" is a second conditional used for advice, so the main clause needs \"would\" + verb."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I ___ him your message if I see him at the party tonight.\"",
+      "options": [
+       "will give",
+       "would give",
+       "gave",
+       "give"
+      ],
+      "correctIndex": 0,
+      "explanation": "The if-clause is in the present simple (\"see\"), so this is a first conditional and the main clause needs \"will\" + verb."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"If I were taller, I would play basketball.\"",
+      "correct": true,
+      "explanation": "This is a correct second conditional about an imaginary present situation: past simple (\"were\") in the if-clause and \"would\" + verb in the result."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"What would you do if you ___ a snake in your bedroom?\"",
+      "options": [
+       "find",
+       "will find",
+       "found",
+       "would find"
+      ],
+      "correctIndex": 2,
+      "explanation": "The main clause uses \"would\", so this is a second conditional and the if-clause needs the past simple."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"___ you study harder, you won't pass the exam.\"",
+      "options": [
+       "If",
+       "When",
+       "As long as",
+       "Unless"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Unless\" means \"if not\": \"Unless you study harder\" = \"If you don't study harder\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"If she had more free time, she will learn to play the guitar.\"",
+      "correct": false,
+      "explanation": "A second conditional needs \"would\" in the main clause: \"If she had more free time, she would learn to play the guitar.\""
+     }
+    ]
+   },
+   {
+    "title": "Relative Clauses",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The girl ___ sits next to me is from Brazil.\"",
+      "options": [
+       "who",
+       "which",
+       "where",
+       "whose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use \"who\" (or \"that\") to refer to people in a relative clause."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"That's the café ___ we first met.\"",
+      "options": [
+       "which",
+       "who",
+       "where",
+       "whose"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use \"where\" to refer to a place when the relative clause has its own subject and verb (\"we first met\")."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"Mr Lee, that teaches us maths, is very kind.\"",
+      "correct": false,
+      "explanation": "\"That\" cannot be used in a non-defining relative clause (one between commas). Use \"who\": \"Mr Lee, who teaches us maths, is very kind.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I have a friend ___ father is a pilot.\"",
+      "options": [
+       "who",
+       "who's",
+       "which",
+       "whose"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use \"whose\" to show possession: \"a friend whose father\" = \"a friend + his/her father\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"My phone, ___ I bought last month, has already stopped working.\"",
+      "options": [
+       "that",
+       "which",
+       "who",
+       "what"
+      ],
+      "correctIndex": 1,
+      "explanation": "In a non-defining relative clause (with commas) about a thing, use \"which\", not \"that\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"The house where I grew up has been sold.\"",
+      "correct": true,
+      "explanation": "\"Where\" correctly introduces a relative clause about a place (\"the house\")."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The book ___ you lent me was really interesting.\"",
+      "options": [
+       "what",
+       "who",
+       "that",
+       "where"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use \"that\" or \"which\" for things in a defining relative clause; \"what\" cannot follow a noun like this."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Which sentence is punctuated correctly?",
+      "options": [
+       "\"My brother, who lives in London, is a doctor.\"",
+       "\"My brother who lives in London, is a doctor.\"",
+       "\"My brother, who lives in London is a doctor.\"",
+       "\"My brother, that lives in London, is a doctor.\""
+      ],
+      "correctIndex": 0,
+      "explanation": "A non-defining relative clause needs a comma at both the beginning and the end, and it cannot use \"that\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "In which sentence can the relative pronoun be left out?",
+      "options": [
+       "\"The man who called you is my uncle.\"",
+       "\"The film that we watched last night was scary.\"",
+       "\"Paris, which is the capital of France, is beautiful.\"",
+       "\"The dog that bit me ran away.\""
+      ],
+      "correctIndex": 1,
+      "explanation": "You can leave out the relative pronoun in a defining clause only when it is the object of the verb (\"we watched the film\")."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"This is the student which won the prize.\"",
+      "correct": false,
+      "explanation": "Use \"who\" or \"that\" for people, not \"which\": \"This is the student who won the prize.\""
+     }
+    ]
+   },
+   {
+    "title": "Phrasal Verbs & Collocations",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"Could you ___ me a favour and carry this bag?\"",
+      "options": [
+       "make",
+       "do",
+       "give",
+       "take"
+      ],
+      "correctIndex": 1,
+      "explanation": "The fixed collocation is \"do someone a favour\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"I need to do my homework before dinner.\"",
+      "correct": true,
+      "explanation": "We say \"do homework\", not \"make homework\". \"Do\" is used with tasks and work."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"We've ___ milk. Can you buy some on your way home?\"",
+      "options": [
+       "run into",
+       "run over",
+       "run away from",
+       "run out of"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Run out of\" something means to have none of it left."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"Please don't ___ so much noise. The baby is sleeping.\"",
+      "options": [
+       "make",
+       "do",
+       "have",
+       "take"
+      ],
+      "correctIndex": 0,
+      "explanation": "The correct collocation is \"make (a) noise\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"My dad ___ smoking last year, and now he feels much healthier.\"",
+      "options": [
+       "gave in",
+       "gave out",
+       "gave up",
+       "gave away"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Give up\" (+ -ing) means to stop doing something, especially a habit."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"She made her best to win the race.\"",
+      "correct": false,
+      "explanation": "The fixed expression is \"do your best\", so it should be \"She did her best to win the race.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"It usually ___ me about 20 minutes to walk to school.\"",
+      "options": [
+       "makes",
+       "takes",
+       "gets",
+       "does"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use \"it takes (someone) + time + to do something\" to talk about how long something lasts."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"Can you ___ my cat while I'm on holiday? It needs food twice a day.\"",
+      "options": [
+       "look for",
+       "look up",
+       "look into",
+       "look after"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Look after\" means to take care of someone or something."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I ___ a mistake in my homework, so the teacher asked me to correct it.\"",
+      "options": [
+       "made",
+       "did",
+       "took",
+       "got"
+      ],
+      "correctIndex": 0,
+      "explanation": "We always say \"make a mistake\", never \"do a mistake\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "In the sentence \"I get on well with my cousins,\" the phrasal verb \"get on with\" means \"to have a friendly relationship with\".",
+      "correct": true,
+      "explanation": "\"Get on (well) with someone\" means to like each other and have a good relationship."
+     }
+    ]
+   },
+   {
+    "title": "Boss: B1 Review",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If I ___ how to fix computers, I would help you, but I don't.\"",
+      "options": [
+       "know",
+       "would know",
+       "knew",
+       "am knowing"
+      ],
+      "correctIndex": 2,
+      "explanation": "This is an imaginary present situation, so it needs the second conditional: past simple in the if-clause."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The man ___ car was stolen called the police.\"",
+      "options": [
+       "whose",
+       "who",
+       "which",
+       "that's"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Whose\" shows possession: the car belonged to the man."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"The town where I was born has changed a lot since I left.\"",
+      "correct": true,
+      "explanation": "\"Where\" correctly introduces a defining relative clause about a place."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"We ___ through the park when it started to rain, so we ran to a café.\"",
+      "options": [
+       "was walking",
+       "have been walking",
+       "are walking",
+       "were walking"
+      ],
+      "correctIndex": 3,
+      "explanation": "The longer action in progress uses the past continuous, and with \"we\" the auxiliary must be \"were\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I'll lend you my bike as long as you ___ careful with it.\"",
+      "options": [
+       "will be",
+       "are",
+       "would be",
+       "were"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"As long as\" works like \"if\" in a first conditional, so it is followed by the present simple, not \"will\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"My grandmother, ___ is 85, still goes swimming every week.\"",
+      "options": [
+       "that",
+       "which",
+       "who",
+       "whose"
+      ],
+      "correctIndex": 2,
+      "explanation": "In a non-defining clause about a person, use \"who\"; \"that\" is not possible after a comma."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"I was doing a lot of progress until I broke my arm.\"",
+      "correct": false,
+      "explanation": "The collocation is \"make progress\", not \"do progress\": \"I was making a lot of progress until I broke my arm.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I can't ___ all this noise any longer. I need some peace and quiet.\"",
+      "options": [
+       "put off",
+       "put away",
+       "put on",
+       "put up with"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Put up with\" means to accept or tolerate something unpleasant."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Which sentence is correct?",
+      "options": [
+       "\"If I have a car, I would drive you to the station.\"",
+       "\"If I had a car, I would drive you to the station.\"",
+       "\"If I had a car, I will drive you to the station.\"",
+       "\"If I would have a car, I would drive you to the station.\""
+      ],
+      "correctIndex": 1,
+      "explanation": "A second conditional uses the past simple in the if-clause and \"would\" + verb in the main clause; never use \"would\" in the if-clause."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"While I was waiting for the bus, I ran into an old friend from primary school.\"",
+      "correct": true,
+      "explanation": "The past continuous shows the background action and the past simple shows the short event; \"run into\" means to meet someone by chance."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "b2",
+  "levels": [
+   {
+    "title": "Advanced Passives",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The new bridge ___ by the end of next year.\"",
+      "options": [
+       "will have completed",
+       "will be completing",
+       "will have been completed",
+       "has been completed"
+      ],
+      "correctIndex": 2,
+      "explanation": "The future perfect passive (will have been + past participle) describes an action that will be finished before a future time; the bridge doesn't complete itself, so it must be passive."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"This form must ___ in black ink.\"",
+      "options": [
+       "be filled in",
+       "fill in",
+       "be filling in",
+       "have filled in"
+      ],
+      "correctIndex": 0,
+      "explanation": "A modal passive is formed with modal + be + past participle: \"must be filled in\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"I had my phone stolen on the bus yesterday.\"",
+      "correct": true,
+      "explanation": "\"Have something + past participle\" can describe something bad that happened to you, caused by someone else."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I can't use my laptop at the moment; it ___.\"",
+      "options": [
+       "is repairing",
+       "has repaired",
+       "repairs",
+       "is being repaired"
+      ],
+      "correctIndex": 3,
+      "explanation": "The present continuous passive (is/are being + past participle) describes an action happening to something right now."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"We're ___ our kitchen redecorated next month.\"",
+      "options": [
+       "making",
+       "having",
+       "doing",
+       "letting"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use \"have something done\" when someone else does a job for you: \"We're having our kitchen redecorated.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The suspect is believed ___ the country last week.\"",
+      "options": [
+       "to leave",
+       "leaving",
+       "to have left",
+       "that he left"
+      ],
+      "correctIndex": 2,
+      "explanation": "After passive reporting verbs (is believed/said/thought), use the perfect infinitive \"to have + past participle\" for an earlier action."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"The results have been announcing on the school website.\"",
+      "correct": false,
+      "explanation": "The present perfect passive needs a past participle: \"The results have been announced on the school website.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"When we arrived at the hotel, our rooms ___, so we had to wait.\"",
+      "options": [
+       "were still being cleaned",
+       "were still cleaning",
+       "had still cleaned",
+       "still cleaned"
+      ],
+      "correctIndex": 0,
+      "explanation": "The past continuous passive (was/were being + past participle) describes an action in progress at a past moment; rooms are cleaned by someone, so it must be passive."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The documents ___ before the meeting, but nobody remembered to do it.\"",
+      "options": [
+       "should have sent",
+       "should have been sent",
+       "should be sending",
+       "must have sent"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Should have been + past participle\" is a perfect modal passive used to criticise something that was not done in the past."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"It is said that the castle is haunted.\"",
+      "correct": true,
+      "explanation": "\"It is said that...\" is a correct impersonal passive structure used to report what people generally say."
+     }
+    ]
+   },
+   {
+    "title": "3rd & Mixed Conditionals",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If we had left earlier, we ___ the train.\"",
+      "options": [
+       "would catch",
+       "would have caught",
+       "will have caught",
+       "had caught"
+      ],
+      "correctIndex": 1,
+      "explanation": "The third conditional describes an unreal past: if + past perfect, would have + past participle."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"If I would have known you were ill, I would have visited you.\"",
+      "correct": false,
+      "explanation": "Don't use \"would have\" in the if-clause. The correct form is \"If I had known you were ill, I would have visited you.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If I ___ harder at school, I would have a better job now.\"",
+      "options": [
+       "have studied",
+       "would have studied",
+       "would study",
+       "had studied"
+      ],
+      "correctIndex": 3,
+      "explanation": "This is a mixed conditional: a past condition (if + past perfect) with a present result (would + verb)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I wish I ___ so much cake last night. I feel sick.\"",
+      "options": [
+       "hadn't eaten",
+       "didn't eat",
+       "wouldn't eat",
+       "haven't eaten"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use \"wish + past perfect\" to express regret about something that happened in the past."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If only you ___ me the truth earlier!\"",
+      "options": [
+       "would tell",
+       "have told",
+       "had told",
+       "tell"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"If only + past perfect\" expresses a strong regret about the past, like \"I wish\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"If I hadn't missed the bus, I wouldn't be late for class now.\"",
+      "correct": true,
+      "explanation": "This is a correct mixed conditional: a past condition (hadn't missed) with a present result (wouldn't be late now)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If she weren't so shy, she ___ to the party last night.\"",
+      "options": [
+       "would come",
+       "would have come",
+       "will have come",
+       "had come"
+      ],
+      "correctIndex": 1,
+      "explanation": "This mixed conditional links a present situation (she is shy) to a past result: if + past simple, would have + past participle."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I wish my neighbours ___ loud music every night. It's so annoying!\"",
+      "options": [
+       "don't play",
+       "hadn't played",
+       "won't play",
+       "wouldn't play"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use \"wish + would/wouldn't\" to complain about someone's annoying behaviour that you want to change."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"___ we known about the traffic, we would have taken the train.\"",
+      "options": [
+       "Had",
+       "If",
+       "Did",
+       "Have"
+      ],
+      "correctIndex": 0,
+      "explanation": "In formal English, \"if\" can be dropped in the third conditional by inverting \"had\" and the subject: \"Had we known...\" = \"If we had known...\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"I wish I can speak Japanese.\"",
+      "correct": false,
+      "explanation": "For a present wish, use \"wish + past form\": \"I wish I could speak Japanese.\""
+     }
+    ]
+   },
+   {
+    "title": "Reported Questions & Commands",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "\"Where do you live?\" she asked. Choose the correct reported question: \"She asked me where ___.\"",
+      "options": [
+       "did I live",
+       "do I live",
+       "had I lived",
+       "I lived"
+      ],
+      "correctIndex": 3,
+      "explanation": "Reported questions use normal statement word order (subject + verb) with no \"do/did\", and the tense usually moves back."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"She asked me what time did the film start.\"",
+      "correct": false,
+      "explanation": "Reported questions don't use question word order or \"did\". The correct sentence is \"She asked me what time the film started.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Are you coming to the party?\" Choose the correct reported question: \"He asked me ___ to the party.\"",
+      "options": [
+       "was I coming",
+       "if I was coming",
+       "that I was coming",
+       "if was I coming"
+      ],
+      "correctIndex": 1,
+      "explanation": "Report yes/no questions with \"if\" or \"whether\" + subject + verb, not with \"that\" or question word order."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Don't touch the wire!\" Choose the correct option: \"The electrician ___ us not to touch the wire.\"",
+      "options": [
+       "warned",
+       "suggested",
+       "said",
+       "denied"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Warn someone (not) to do something\" reports a warning about danger; \"say\" and \"suggest\" cannot be followed by an object + infinitive."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"I didn't break the window,\" said Tom. Choose the correct option: \"Tom denied ___ the window.\"",
+      "options": [
+       "to break",
+       "that broke",
+       "breaking",
+       "break"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Deny\" is followed by the -ing form (or \"having\" + past participle), not by an infinitive."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Let's go to the cinema,\" said Mia. Choose the correct option: \"Mia suggested ___ to the cinema.\"",
+      "options": [
+       "to go",
+       "us to go",
+       "go",
+       "going"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Suggest\" is followed by the -ing form or a \"that\" clause, never by \"to\" + infinitive."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"My mum told me to tidy my room before going out.\"",
+      "correct": true,
+      "explanation": "Reported commands use \"tell + object + to + infinitive\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Yes, I copied my friend's homework,\" said Leo. Choose the correct option: \"Leo ___ copying his friend's homework.\"",
+      "options": [
+       "refused",
+       "promised",
+       "admitted",
+       "offered"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Admit + -ing\" reports that someone agreed they did something wrong."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Please close the door,\" the teacher said to me. Choose the correct option: \"The teacher asked me ___ the door.\"",
+      "options": [
+       "closing",
+       "to close",
+       "that I close",
+       "close"
+      ],
+      "correctIndex": 1,
+      "explanation": "Reported requests use \"ask + object + to + infinitive\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"He suggested me to take a taxi.\"",
+      "correct": false,
+      "explanation": "\"Suggest\" cannot be followed by an object + infinitive. Say \"He suggested (that) I take a taxi\" or \"He suggested taking a taxi.\""
+     }
+    ]
+   },
+   {
+    "title": "Word Formation & Linkers",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"___ the rain, we went for a walk.\"",
+      "options": [
+       "Despite",
+       "Although",
+       "However",
+       "Whereas"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Despite\" is followed by a noun or -ing form; \"although\" and \"whereas\" need a full clause."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The instructions were so ___ that nobody could understand them.\"",
+      "options": [
+       "confused",
+       "confusion",
+       "confusing",
+       "confuse"
+      ],
+      "correctIndex": 2,
+      "explanation": "Adjectives ending in -ing describe the thing that causes a feeling; -ed adjectives describe how people feel."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"Despite of the heavy traffic, we arrived on time.\"",
+      "correct": false,
+      "explanation": "\"Despite\" is never followed by \"of\". Use \"Despite the heavy traffic\" or \"In spite of the heavy traffic\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"It's ___ to drive without a licence.\"",
+      "options": [
+       "unlegal",
+       "illegal",
+       "inlegal",
+       "dislegal"
+      ],
+      "correctIndex": 1,
+      "explanation": "Before words starting with \"l\", the negative prefix \"in-\" becomes \"il-\": legal → illegal."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"My brother loves sports, ___ I prefer reading.\"",
+      "options": [
+       "despite",
+       "however",
+       "in spite of",
+       "whereas"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Whereas\" joins two clauses in one sentence to show a contrast between two people or things."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The ___ of the new library took two years.\"",
+      "options": [
+       "construction",
+       "constructive",
+       "constructively",
+       "constructed"
+      ],
+      "correctIndex": 0,
+      "explanation": "After \"the\" and before \"of\", we need a noun; the suffix \"-ion\" turns the verb \"construct\" into a noun."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "The word \"unbelievable\" is formed with a negative prefix and an adjective suffix.",
+      "correct": true,
+      "explanation": "\"Unbelievable\" = \"un-\" (negative prefix) + \"believe\" + \"-able\" (adjective suffix)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"___ he was tired, he finished his homework.\"",
+      "options": [
+       "Despite",
+       "However",
+       "Although",
+       "In spite of"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Although\" is followed by a full clause (subject + verb); \"despite\" and \"in spite of\" need a noun or -ing form."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The service at the hotel was very good. ___, the rooms were small and noisy.\"",
+      "options": [
+       "Although",
+       "Despite",
+       "Whereas",
+       "However"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"However\" links two separate sentences to show contrast and is usually followed by a comma."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "The opposite of \"patient\" is \"unpatient\".",
+      "correct": false,
+      "explanation": "The negative form of \"patient\" uses the prefix \"im-\": \"impatient\". \"Im-\" is often used before words starting with \"p\" or \"m\"."
+     }
+    ]
+   },
+   {
+    "title": "Boss: B2 Review",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"If the email ___ to the wrong address, the client would have received it on time.\"",
+      "options": [
+       "wasn't sent",
+       "hadn't been sent",
+       "hadn't sent",
+       "wouldn't have been sent"
+      ],
+      "correctIndex": 1,
+      "explanation": "This is a third conditional with a passive if-clause: if + had (not) been + past participle."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"Had I known about the exam, I would have revised more.\"",
+      "correct": true,
+      "explanation": "This is a correct inverted third conditional: \"Had I known\" = \"If I had known\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"She apologised ___ late for the meeting.\"",
+      "options": [
+       "to be",
+       "that she was being",
+       "for being",
+       "for be"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Apologise\" is followed by \"for\" + -ing form."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"___ having very little money, they always seemed happy.\"",
+      "options": [
+       "Despite",
+       "Although",
+       "However",
+       "Even though"
+      ],
+      "correctIndex": 0,
+      "explanation": "Only \"despite\" can be followed directly by an -ing form; \"although\" and \"even though\" need a full clause."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The thief is thought ___ through the back window.\"",
+      "options": [
+       "having got in",
+       "that got in",
+       "to be got in",
+       "to have got in"
+      ],
+      "correctIndex": 3,
+      "explanation": "After a passive reporting verb (\"is thought\"), use the perfect infinitive \"to have + past participle\" for an earlier action."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"The manager denied to have lost the documents.\"",
+      "correct": false,
+      "explanation": "\"Deny\" is followed by the -ing form: \"The manager denied having lost (or losing) the documents.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"I wish I ___ to my parents' advice when I chose my university course.\"",
+      "options": [
+       "listened",
+       "had listened",
+       "would listen",
+       "have listened"
+      ],
+      "correctIndex": 1,
+      "explanation": "To express regret about a past action, use \"wish + past perfect\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"The coach ordered the players ___ late for training again.\"",
+      "options": [
+       "not to be",
+       "to not being",
+       "not being",
+       "don't be"
+      ],
+      "correctIndex": 0,
+      "explanation": "Negative reported commands use \"order/tell + object + not to + infinitive\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is correct: \"Whereas her sister is outgoing, Lucy is quite shy.\"",
+      "correct": true,
+      "explanation": "\"Whereas\" can start a sentence to introduce a contrasting clause, followed by a comma and the main clause."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the correct option: \"Her ___ to help others makes her a great volunteer.\"",
+      "options": [
+       "willing",
+       "willingly",
+       "willingness",
+       "unwilling"
+      ],
+      "correctIndex": 2,
+      "explanation": "After the possessive \"her\", we need a noun; the suffix \"-ness\" turns the adjective \"willing\" into the noun \"willingness\"."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "c1",
+  "levels": [
+   {
+    "title": "Inversion & Cleft Sentences",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Not until the results came in ___ how close the race had been.\"",
+      "options": [
+       "we realised",
+       "did we realise",
+       "we did realise",
+       "had we been realising"
+      ],
+      "correctIndex": 1,
+      "explanation": "After a fronted \"Not until ...\" clause, the main clause uses auxiliary inversion: \"did we realise\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"___ had I sat down than the phone rang.\"",
+      "options": [
+       "Hardly",
+       "Scarcely",
+       "No sooner",
+       "Barely"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"No sooner\" is paired with \"than\"; \"Hardly\", \"Scarcely\" and \"Barely\" are paired with \"when\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is grammatically correct: 'Seldom I have seen such dedication.'",
+      "correct": false,
+      "explanation": "After a fronted negative adverb such as \"Seldom\", the subject and auxiliary must be inverted: \"Seldom have I seen such dedication.\""
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"What I need ___ a long holiday.\"",
+      "options": [
+       "is",
+       "are",
+       "being",
+       "to be"
+      ],
+      "correctIndex": 0,
+      "explanation": "In a wh-cleft sentence the \"What ...\" clause is treated as singular, so with a singular complement the verb is \"is\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the grammatically correct sentence.",
+      "options": [
+       "Under no circumstances you should leave the door unlocked.",
+       "Under no circumstances do you should leave the door unlocked.",
+       "Under no circumstances you leave should the door unlocked.",
+       "Under no circumstances should you leave the door unlocked."
+      ],
+      "correctIndex": 3,
+      "explanation": "Fronted negative phrases like \"Under no circumstances\" require inversion of the modal and subject: \"should you leave\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"It was only when she read the letter ___ she understood what had happened.\"",
+      "options": [
+       "which",
+       "what",
+       "that",
+       "when"
+      ],
+      "correctIndex": 2,
+      "explanation": "An \"It was ... that\" cleft sentence uses \"that\" to introduce the rest of the clause, even when the focus is a time expression."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is grammatically correct: 'Little did he know that the police were already outside.'",
+      "correct": true,
+      "explanation": "Fronted \"Little\" with a negative meaning triggers inversion with the auxiliary \"did\": \"Little did he know\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"So severe ___ that the match had to be abandoned.\"",
+      "options": [
+       "was the storm",
+       "the storm was",
+       "did the storm",
+       "the storm had"
+      ],
+      "correctIndex": 0,
+      "explanation": "When \"So + adjective\" is fronted for emphasis, the verb \"be\" is inverted with the subject: \"So severe was the storm that ...\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Only by working together ___ this problem.\"",
+      "options": [
+       "we will solve",
+       "will we solve",
+       "we solve",
+       "solve we"
+      ],
+      "correctIndex": 1,
+      "explanation": "A fronted \"Only by ...\" phrase requires inversion in the main clause: auxiliary before subject, \"will we solve\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "In the cleft sentence 'It was Tom who broke the window', the speaker is emphasising who broke the window.",
+      "correct": true,
+      "explanation": "An \"It was X who ...\" cleft sentence puts the focus on X, here identifying Tom as the person responsible."
+     }
+    ]
+   },
+   {
+    "title": "Modals of Deduction",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The ground is soaking wet. It ___ rained heavily overnight.\"",
+      "options": [
+       "must have",
+       "can't have",
+       "should have",
+       "needn't have"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Must have + past participle\" expresses a confident deduction about the past based on present evidence."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"You ___ been at the party last night — I was there all evening and didn't see you.\"",
+      "options": [
+       "needn't have",
+       "shouldn't have",
+       "wouldn't have",
+       "can't have"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Can't have + past participle\" expresses certainty that something did not happen in the past."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'He might have missed the train' expresses certainty that he missed the train.",
+      "correct": false,
+      "explanation": "\"Might have\" expresses only a possibility about the past; certainty would be expressed with \"must have\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"She ___ be at home — I can see her car in the drive and the lights are on.\"",
+      "options": [
+       "can't",
+       "must",
+       "needn't",
+       "ought not"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Must + infinitive\" expresses a confident deduction about the present based on evidence."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Which sentence means \"It is possible that he forgot about the meeting\"?",
+      "options": [
+       "He must have forgotten about the meeting.",
+       "He can't have forgotten about the meeting.",
+       "He may have forgotten about the meeting.",
+       "He should have forgotten about the meeting."
+      ],
+      "correctIndex": 2,
+      "explanation": "\"May have + past participle\" expresses possibility about the past; \"must have\" is near certainty and \"can't have\" is impossibility."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "The modal in this sentence fits the evidence: 'They can't have gone out — the lights are off and the car has gone.'",
+      "correct": false,
+      "explanation": "The evidence suggests they did go out, so the logical deduction is \"They must have gone out\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"I ___ left my keys at the restaurant; I definitely had them when I got into the taxi afterwards.\"",
+      "options": [
+       "must have",
+       "can't have",
+       "might have",
+       "should have"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since the speaker definitely had the keys after leaving, it is impossible that they were left there: \"can't have\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"That ___ be Jack at the door — he's in Australia this week.\"",
+      "options": [
+       "needn't",
+       "daren't",
+       "isn't able to",
+       "can't"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Can't + infinitive\" expresses a logical impossibility in the present."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the sentence that correctly expresses a possibility about the past.",
+      "options": [
+       "She could have taken the earlier bus.",
+       "She can have taken the earlier bus.",
+       "She must taken the earlier bus.",
+       "She might has taken the earlier bus."
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Could have + past participle\" expresses past possibility; \"can have\" is not used this way in affirmative statements."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'She must have been waiting for hours' uses the continuous form to make a deduction about an activity in progress over a period in the past.",
+      "correct": true,
+      "explanation": "\"Must have been + -ing\" is used to deduce that an action was ongoing over a period in the past."
+     }
+    ]
+   },
+   {
+    "title": "Idioms & Register",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Which word is the most formal equivalent of \"find out\"?",
+      "options": [
+       "figure",
+       "dig up",
+       "ascertain",
+       "suss out"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Ascertain\" is a formal verb meaning to find out for certain; \"suss out\" and \"dig up\" are informal."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Which sentence is most appropriate in a formal letter of complaint?",
+      "options": [
+       "I'm really fed up with your service.",
+       "I wish to express my dissatisfaction with the service I received.",
+       "Your service is a total joke.",
+       "I'm gonna need you to sort this out."
+      ],
+      "correctIndex": 1,
+      "explanation": "Formal complaints use impersonal, measured language such as \"I wish to express my dissatisfaction\", avoiding slang and emotive phrasing."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Don't worry about the presentation — it'll be a piece of ___.\"",
+      "options": [
+       "pie",
+       "bread",
+       "biscuit",
+       "cake"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"A piece of cake\" is an informal idiom meaning something very easy."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "What does the idiom \"to cut corners\" mean?",
+      "options": [
+       "to do something cheaply or carelessly to save time or money",
+       "to take a shorter route to save time",
+       "to reduce the number of staff",
+       "to avoid answering a question directly"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"To cut corners\" means to do something in the easiest or cheapest way, often sacrificing quality."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Commence' is a more formal alternative to 'start'.",
+      "correct": true,
+      "explanation": "\"Commence\" belongs to a formal register and is typical of official or legal language, whereas \"start\" is neutral."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"She's been under the ___ all week, so she's staying at home.\"",
+      "options": [
+       "climate",
+       "storm",
+       "weather",
+       "clouds"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Under the weather\" is an informal idiom meaning slightly ill."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Which is the most formal way to say \"We need to look into this problem\"?",
+      "options": [
+       "The matter requires investigation.",
+       "We need to dig into this problem.",
+       "We gotta check this out.",
+       "This needs a proper look-see."
+      ],
+      "correctIndex": 0,
+      "explanation": "Formal register favours nouns and impersonal structures (\"requires investigation\") over phrasal verbs and slang."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'To let the cat out of the bag' means to reveal a secret, usually by mistake.",
+      "correct": true,
+      "explanation": "This informal idiom describes accidentally or carelessly disclosing something that was meant to be kept secret."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "What does \"I'm all ears\" mean?",
+      "options": [
+       "I can't hear you properly.",
+       "I've heard enough.",
+       "Everyone is listening to me.",
+       "I'm ready and eager to listen."
+      ],
+      "correctIndex": 3,
+      "explanation": "\"I'm all ears\" is an informal way of saying you are listening attentively and want to hear more."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Gonna' and 'wanna' are appropriate in a formal business report.",
+      "correct": false,
+      "explanation": "\"Gonna\" and \"wanna\" are informal spoken forms; formal writing requires \"going to\" and \"want to\"."
+     }
+    ]
+   },
+   {
+    "title": "Near-Synonyms",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The new regulations will ___ small businesses most.\"",
+      "options": [
+       "effect",
+       "affection",
+       "effective",
+       "affect"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Affect\" is the verb meaning to influence; \"effect\" is usually a noun (or a formal verb meaning to bring about)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"From his tone, I ___ that he was unhappy with the decision.\"",
+      "options": [
+       "inferred",
+       "implied",
+       "insinuated",
+       "suggested"
+      ],
+      "correctIndex": 0,
+      "explanation": "The listener \"infers\" (draws a conclusion); the speaker \"implies\" or \"suggests\" (hints at something)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The ___ interruptions from my neighbours' building work made it impossible to concentrate.\"",
+      "options": [
+       "continuous",
+       "contiguous",
+       "continual",
+       "consecutive"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Continual\" means repeated frequently with breaks in between; \"continuous\" means without any break at all."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Principal' (main) and 'principle' (a fundamental rule) are interchangeable in writing.",
+      "correct": false,
+      "explanation": "\"Principal\" means main or chief (or a head teacher), while \"principle\" means a basic truth or rule; they are not interchangeable."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"A judge must remain completely ___; she cannot favour either side.\"",
+      "options": [
+       "uninterested",
+       "disinterested",
+       "indifferent",
+       "unconcerned"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Disinterested\" means impartial, having nothing to gain; \"uninterested\" and \"indifferent\" mean not caring or bored."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The signing of the peace treaty was a ___ moment for both nations.\"",
+      "options": [
+       "historical",
+       "history",
+       "historian",
+       "historic"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Historic\" means important or significant in history; \"historical\" means relating to the past or to the study of history."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Buying in bulk is more ___ for large families.\"",
+      "options": [
+       "economic",
+       "economical",
+       "economy",
+       "economist"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Economical\" means saving money or not wasteful; \"economic\" relates to the economy as a whole."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Complement' means to praise someone, while 'compliment' means to complete or go well with something.",
+      "correct": false,
+      "explanation": "The definitions are reversed: a \"compliment\" is praise, while to \"complement\" is to complete or go well with something."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Let me ___ you that your data will be kept confidential.\"",
+      "options": [
+       "ensure",
+       "insure",
+       "assure",
+       "secure"
+      ],
+      "correctIndex": 2,
+      "explanation": "You \"assure\" a person (remove their doubts); you \"ensure\" that something happens and \"insure\" against financial loss."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Imply' means to suggest something indirectly, while 'infer' means to draw a conclusion from evidence.",
+      "correct": true,
+      "explanation": "The speaker or writer implies; the listener or reader infers."
+     }
+    ]
+   },
+   {
+    "title": "Boss: C1 Review",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"___ he arrived on time, he would have been able to meet the director.\"",
+      "options": [
+       "Had",
+       "If",
+       "Should",
+       "Were"
+      ],
+      "correctIndex": 0,
+      "explanation": "An inverted third conditional uses \"Had + subject + past participle\" in place of \"If he had arrived\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Rarely ___ such a compelling argument presented with so little evidence.\"",
+      "options": [
+       "one hears",
+       "does one hear",
+       "one does hear",
+       "hears one"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fronted \"Rarely\" requires auxiliary inversion; in the present simple, \"does\" is added: \"does one hear\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"He looks utterly exhausted. He ___ up all night finishing the report.\"",
+      "options": [
+       "can't have been",
+       "must be",
+       "should have been",
+       "must have been"
+      ],
+      "correctIndex": 3,
+      "explanation": "Present evidence (he looks exhausted) supports a confident deduction about the past: \"must have been\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is grammatically correct: 'It's not the money that worries me but the time it will take.'",
+      "correct": true,
+      "explanation": "This is a well-formed \"It is not X that ... but Y\" cleft sentence contrasting two focused elements."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "In a formal report, which phrase best replaces \"a lot of\" in \"a lot of respondents\"?",
+      "options": [
+       "loads of",
+       "tons of",
+       "a considerable number of",
+       "heaps of"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"A considerable number of\" is formal and used with countable nouns; \"loads/tons/heaps of\" are informal."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The minister's statement ___ that cuts were imminent, though she never said so directly.\"",
+      "options": [
+       "implied",
+       "inferred",
+       "deduced",
+       "concluded"
+      ],
+      "correctIndex": 0,
+      "explanation": "A statement or speaker \"implies\" (hints); \"infer\", \"deduce\" and \"conclude\" describe what the listener does."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'She can't have finished already' expresses the speaker's near certainty that she has NOT finished.",
+      "correct": true,
+      "explanation": "\"Can't have + past participle\" signals that the speaker believes something is impossible or very unlikely."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Not only ___ the deadline, but they also went over budget.\"",
+      "options": [
+       "they missed",
+       "they did miss",
+       "did they miss",
+       "missed they"
+      ],
+      "correctIndex": 2,
+      "explanation": "A fronted \"Not only\" requires auxiliary inversion; with a past simple verb, \"did\" is used: \"did they miss\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"After weeks of arguing, the two brothers finally decided to bury the ___.\"",
+      "options": [
+       "axe",
+       "hatchet",
+       "sword",
+       "knife"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Bury the hatchet\" is a fixed idiom meaning to end a quarrel and become friendly again."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is grammatically correct: 'Hardly had she left the room than the argument started again.'",
+      "correct": false,
+      "explanation": "\"Hardly\" is paired with \"when\", not \"than\": \"Hardly had she left the room when the argument started again.\""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "c2",
+  "levels": [
+   {
+    "title": "Subtle Collocations",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Given the latest polls, the outcome of the election was a ___ conclusion.\"",
+      "options": [
+       "foretold",
+       "foreseen",
+       "foregone",
+       "forecast"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"A foregone conclusion\" is a fixed collocation meaning a result that is certain before it happens."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Rising sea levels ___ a serious threat to coastal communities.\"",
+      "options": [
+       "pose",
+       "make",
+       "give",
+       "do"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Pose a threat\" is the standard collocation; \"make\", \"give\" and \"do\" do not combine with \"threat\" in this sense."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Low-income households will ___ the brunt of the tax increase.\"",
+      "options": [
+       "lift",
+       "hold",
+       "raise",
+       "bear"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Bear the brunt of\" is a fixed collocation meaning to suffer the worst part of something."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Make a decision' and 'take a decision' are both acceptable collocations in British English.",
+      "correct": true,
+      "explanation": "\"Make a decision\" is universal, and \"take a decision\" is also standard in British English."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Her remarks during the interview ___ a storm of controversy.\"",
+      "options": [
+       "launched",
+       "unleashed",
+       "released",
+       "dropped"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Unleash a storm (of controversy/criticism)\" is a natural collocation; the other verbs do not collocate with \"storm\" in this sense."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The company's reputation suffered ___ damage after the scandal.\"",
+      "options": [
+       "irreparable",
+       "unrepairable",
+       "irrecoverable",
+       "unmendable"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Irreparable damage\" is the fixed collocation for harm that cannot be put right."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The plan was ___ with difficulties from the very start.\"",
+      "options": [
+       "fretful",
+       "fractious",
+       "fraught",
+       "frantic"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Fraught with\" (difficulty, danger, tension) means full of something undesirable; the other adjectives do not take \"with\" in this sense."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Heavy rain' and 'strong rain' are equally natural collocations in English.",
+      "correct": false,
+      "explanation": "English uses \"heavy rain\"; \"strong\" collocates with \"wind\", not \"rain\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Despite repeated warnings, the authorities ___ a blind eye to the problem.\"",
+      "options": [
+       "closed",
+       "shut",
+       "blinked",
+       "turned"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Turn a blind eye to\" is a fixed expression meaning to deliberately ignore something."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Commit a crime' and 'perform a crime' are equally acceptable collocations.",
+      "correct": false,
+      "explanation": "The natural collocation is \"commit a crime\"; \"perform\" does not collocate with \"crime\"."
+     }
+    ]
+   },
+   {
+    "title": "Figurative Language",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Her latest lie was the ___ that broke the camel's back.\"",
+      "options": [
+       "hay",
+       "straw",
+       "twig",
+       "feather"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"The straw that broke the camel's back\" is the final small problem that makes a situation unbearable."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "What does \"to be on tenterhooks\" mean?",
+      "options": [
+       "to be trapped in a difficult situation",
+       "to be under someone's control",
+       "to be extremely busy",
+       "to be anxious and in suspense"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"On tenterhooks\" describes nervous suspense while waiting for news or an outcome."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "The phrase \"a double-edged sword\" describes something that:",
+      "options": [
+       "has both favourable and unfavourable consequences",
+       "is extremely dangerous",
+       "is deliberately deceptive",
+       "can only be used twice"
+      ],
+      "correctIndex": 0,
+      "explanation": "A double-edged sword is something whose benefits come with corresponding drawbacks."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'To throw the baby out with the bathwater' means to discard something valuable while getting rid of something unwanted.",
+      "correct": true,
+      "explanation": "The idiom warns against rejecting the good parts of something along with the bad."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Our office is a well-oiled machine.\" This metaphor suggests the office:",
+      "options": [
+       "is noisy and mechanical",
+       "relies heavily on technology",
+       "operates smoothly and efficiently",
+       "is in need of maintenance"
+      ],
+      "correctIndex": 2,
+      "explanation": "A \"well-oiled machine\" figuratively describes an organisation that runs smoothly with no friction."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The CEO's resignation came out of the ___; nobody had seen it coming.\"",
+      "options": [
+       "grey",
+       "dark",
+       "clouds",
+       "blue"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Out of the blue\" means completely unexpectedly."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "What does \"to damn with faint praise\" mean?",
+      "options": [
+       "to praise someone excessively",
+       "to criticise indirectly by giving only lukewarm approval",
+       "to curse someone quietly",
+       "to praise someone behind their back"
+      ],
+      "correctIndex": 1,
+      "explanation": "Praising something only half-heartedly can signal disapproval more effectively than open criticism."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'To have a chip on your shoulder' means to be in a cheerful and optimistic mood.",
+      "correct": false,
+      "explanation": "Having a chip on your shoulder means harbouring a long-standing grievance or feeling resentful."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"He's been resting on his ___ since winning the award and hasn't produced anything new.\"",
+      "options": [
+       "laurels",
+       "honours",
+       "medals",
+       "trophies"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Rest on one's laurels\" means to rely on past achievements instead of making further effort."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'A Pyrrhic victory' is a victory gained at such great cost that it is hardly worth winning.",
+      "correct": true,
+      "explanation": "Named after King Pyrrhus, whose victories over Rome cost him most of his army."
+     }
+    ]
+   },
+   {
+    "title": "Advanced Grammar",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The committee recommended that the proposal ___ rejected.\"",
+      "options": [
+       "being",
+       "to be",
+       "will be",
+       "be"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verbs of recommendation take the mandative subjunctive: \"that + subject + base form\" (\"be rejected\")."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"___ it not been for your timely intervention, the project would have collapsed.\"",
+      "options": [
+       "Were",
+       "Should",
+       "Had",
+       "Did"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Had it not been for\" is the inverted form of \"If it had not been for\" in a third conditional."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Will it rain tomorrow?\" — \"I hope ___.\"",
+      "options": [
+       "no",
+       "not",
+       "don't",
+       "not so"
+      ],
+      "correctIndex": 1,
+      "explanation": "With \"hope\", the negative substitute for a clause is \"not\" (\"I hope not\"), never \"I don't hope so\" or \"I hope not so\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"___ the report, she realised that several figures were missing.\"",
+      "options": [
+       "Having read",
+       "Having been read",
+       "Being read",
+       "To have read"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perfect participle clause (\"Having read\") shows an action completed by the subject before the main action."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence contains a dangling participle: 'Walking down the street, the trees looked beautiful.'",
+      "correct": true,
+      "explanation": "The implied subject of \"walking\" is a person, but the main clause subject is \"the trees\", so the participle dangles."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"___ by the scale of the task, the volunteers nonetheless refused to give up.\"",
+      "options": [
+       "Daunting",
+       "Having daunted",
+       "Daunted",
+       "To daunt"
+      ],
+      "correctIndex": 2,
+      "explanation": "A past participle clause (\"Daunted\") has a passive meaning: the volunteers were daunted by the task."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"I'd have gone to the concert if I could ___.\"",
+      "options": [
+       "have",
+       "had",
+       "has",
+       "having"
+      ],
+      "correctIndex": 0,
+      "explanation": "In ellipsis after a modal perfect, the main verb is dropped but \"have\" is retained: \"if I could have (gone)\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "In 'If need be, we can work over the weekend', 'be' is an example of a fixed subjunctive expression.",
+      "correct": true,
+      "explanation": "\"If need be\" preserves the old subjunctive form \"be\", like \"so be it\" and \"be that as it may\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"Far ___ it from me to criticise, but your essay needs more work.\"",
+      "options": [
+       "is",
+       "be",
+       "was",
+       "being"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Far be it from me\" is a fixed expression that uses the subjunctive \"be\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is grammatically correct: 'Being a rainy day, we decided to stay at home.'",
+      "correct": false,
+      "explanation": "The participle clause wrongly refers to \"we\"; the correct form uses an absolute clause: \"It being a rainy day, ...\"."
+     }
+    ]
+   },
+   {
+    "title": "Inference & Tone",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "\"Oh, wonderful — another meeting that could have been an email,\" she sighed. What is the speaker's tone?",
+      "options": [
+       "sarcastic",
+       "enthusiastic",
+       "grateful",
+       "apologetic"
+      ],
+      "correctIndex": 0,
+      "explanation": "The positive word \"wonderful\" combined with \"sighed\" and the complaint signals sarcasm."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"While the proposal is not without merit, it would benefit from considerably more rigour.\" The writer's attitude to the proposal is best described as:",
+      "options": [
+       "dismissive and hostile",
+       "wholeheartedly supportive",
+       "cautiously critical",
+       "indifferent"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Not without merit\" concedes some value, while \"would benefit from considerably more rigour\" politely signals serious reservations."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"The hotel's 'sea view' required a certain amount of imagination and a good pair of binoculars.\" What does the writer imply?",
+      "options": [
+       "The hotel provided binoculars for guests.",
+       "The view was spectacular.",
+       "The hotel was right on the beach.",
+       "The sea was barely visible from the hotel."
+      ],
+      "correctIndex": 3,
+      "explanation": "The ironic reference to imagination and binoculars implies the advertised view was misleading."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "In the sentence 'He is, shall we say, economical with the truth', the writer is suggesting that he is dishonest.",
+      "correct": true,
+      "explanation": "\"Economical with the truth\" is a euphemism for lying, and \"shall we say\" signals deliberate understatement."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Needless to say, the minister's promise to cut waiting times proved about as durable as a snowflake in July.\" The writer's attitude towards the minister is:",
+      "options": [
+       "admiring",
+       "sceptical and mocking",
+       "neutral",
+       "sympathetic"
+      ],
+      "correctIndex": 1,
+      "explanation": "The absurd simile ridicules the promise as short-lived, and \"Needless to say\" implies it was predictable."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"It is not unreasonable to suggest that the policy has had some unintended consequences.\" The use of \"not unreasonable\" and \"some\" makes the claim:",
+      "options": [
+       "forceful and emphatic",
+       "light-hearted and humorous",
+       "self-contradictory",
+       "hedged and cautious"
+      ],
+      "correctIndex": 3,
+      "explanation": "Litotes (\"not unreasonable\") and the vague quantifier \"some\" soften the claim, a typical hedging strategy in academic writing."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"I'd love to stay and chat, but I wouldn't want to keep you from your important work,\" he said, glancing at the clock. What is most likely implied?",
+      "options": [
+       "He greatly admires the listener's work.",
+       "He wants to end the conversation.",
+       "He has nothing else to do.",
+       "He is worried about the listener's workload."
+      ],
+      "correctIndex": 1,
+      "explanation": "The polite excuse plus the glance at the clock implies he is looking for a tactful way to leave."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "In the extract 'Her performance was, to put it kindly, adequate', the writer is expressing high praise.",
+      "correct": false,
+      "explanation": "\"To put it kindly\" signals that \"adequate\" is a generous description of a disappointing performance."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"Having waited ninety minutes for a table, we were finally rewarded with lukewarm soup and a waiter who regarded us as an inconvenience.\" The tone of this review is:",
+      "options": [
+       "neutral and factual",
+       "warmly appreciative",
+       "ironic and disapproving",
+       "apologetic"
+      ],
+      "correctIndex": 2,
+      "explanation": "The word \"rewarded\" is used ironically, since the experience described is clearly negative."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "The phrase 'with the greatest respect' in 'With the greatest respect, Minister, that is simply not the case' usually signals strong agreement.",
+      "correct": false,
+      "explanation": "In formal debate, \"with the greatest respect\" typically introduces firm disagreement, softened by politeness."
+     }
+    ]
+   },
+   {
+    "title": "Boss: C2 Review",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The scandal dealt a severe ___ to the party's chances of re-election.\"",
+      "options": [
+       "hit",
+       "blow",
+       "strike",
+       "punch"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Deal a blow to\" is a fixed collocation meaning to cause serious damage or disappointment."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"His argument doesn't hold ___ under close scrutiny.\"",
+      "options": [
+       "water",
+       "weight",
+       "ground",
+       "fire"
+      ],
+      "correctIndex": 0,
+      "explanation": "An argument that \"doesn't hold water\" is unconvincing because it does not stand up to examination."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"It is imperative that the patient ___ informed of the risks before surgery.\"",
+      "options": [
+       "being",
+       "to be",
+       "be",
+       "been"
+      ],
+      "correctIndex": 2,
+      "explanation": "After \"It is imperative that\", the mandative subjunctive uses the base form: \"the patient be informed\"."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "'Not that I'm complaining, but the room is rather cold' — here the speaker is, in fact, complaining.",
+      "correct": true,
+      "explanation": "\"Not that I'm complaining, but ...\" is a hedge that typically introduces exactly the complaint it denies."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "\"The report, all 400 pages of it, manages to say remarkably little.\" The writer suggests the report is:",
+      "options": [
+       "thorough and insightful",
+       "admirably concise",
+       "deliberately controversial",
+       "long but lacking in substance"
+      ],
+      "correctIndex": 3,
+      "explanation": "The contrast between \"all 400 pages\" and \"remarkably little\" ironically criticises the report's lack of content."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"___ in a hurry, the letter contained several errors.\"",
+      "options": [
+       "Writing",
+       "Written",
+       "Having written",
+       "To write"
+      ],
+      "correctIndex": 1,
+      "explanation": "The letter was written by someone, so a passive past participle clause (\"Written\") correctly refers to the subject \"the letter\"."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Choose the best option: \"The new evidence ___ serious doubt on his version of events.\"",
+      "options": [
+       "puts",
+       "makes",
+       "gives",
+       "casts"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Cast doubt on\" is the standard collocation for making something seem less certain or true."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "This sentence is grammatically correct: 'Should you require further assistance, please do not hesitate to contact us.'",
+      "correct": true,
+      "explanation": "Inverted \"Should you require\" is a formal alternative to \"If you require\" in conditional clauses."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "What does \"to move the goalposts\" mean?",
+      "options": [
+       "to change the rules or targets unfairly once a process has begun",
+       "to achieve a goal ahead of schedule",
+       "to abandon an ambition",
+       "to switch to a different team"
+      ],
+      "correctIndex": 0,
+      "explanation": "The idiom describes unfairly altering conditions so that success becomes harder to achieve."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Describing a proposal as receiving 'lukewarm support' implies enthusiastic and wholehearted backing.",
+      "correct": false,
+      "explanation": "\"Lukewarm support\" figuratively means half-hearted or unenthusiastic approval."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "lop-5",
+  "levels": [
+   {
+    "title": "Giới thiệu bản thân",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « Where are you from? », em trả lời thế nào?",
+      "options": [
+       "I'm from Viet Nam.",
+       "I'm ten years old.",
+       "My name is Lan.",
+       "I'm in class 5A."
+      ],
+      "correctIndex": 0,
+      "explanation": "« Where are you from? » hỏi em đến từ đâu, nên em trả lời « I'm from Viet Nam. » (Mình đến từ Việt Nam)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Người Việt Nam » (quốc tịch Việt Nam) trong tiếng Anh là gì?",
+      "options": [
+       "Viet Nam",
+       "Vietnamese",
+       "Vietnamian",
+       "Vietnamer"
+      ],
+      "correctIndex": 1,
+      "explanation": "Quốc tịch Việt Nam là « Vietnamese », còn « Viet Nam » là tên đất nước nhé em."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu hỏi « What's your address? » dùng để hỏi địa chỉ của bạn.",
+      "correct": true,
+      "explanation": "Đúng rồi! « Address » nghĩa là địa chỉ, nên câu này hỏi bạn sống ở đâu."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Akiko is from Japan. She is ___.",
+      "options": [
+       "Japan",
+       "Chinese",
+       "Japanese",
+       "English"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bạn ấy đến từ Nhật Bản (Japan) nên quốc tịch là « Japanese » (người Nhật)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « How old are you? », Mai trả lời thế nào?",
+      "options": [
+       "I'm in class 5B.",
+       "I'm eleven years old.",
+       "I'm from Australia.",
+       "I'm fine, thank you."
+      ],
+      "correctIndex": 1,
+      "explanation": "« How old are you? » là hỏi tuổi, nên Mai trả lời « I'm eleven years old. » (Mình 11 tuổi)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « I'm from England. I'm English. » là câu đúng.",
+      "correct": true,
+      "explanation": "Chính xác! Đất nước là « England » (nước Anh), còn quốc tịch là « English » (người Anh)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu hỏi phù hợp với câu trả lời: « I live at 25 Tran Phu Street. »",
+      "options": [
+       "Where are you from?",
+       "How old are you?",
+       "Where do you live?",
+       "What's your name?"
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu trả lời nói về nơi ở (số nhà, tên phố), nên câu hỏi là « Where do you live? » (Bạn sống ở đâu?)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Nationality » nghĩa là gì?",
+      "options": [
+       "Địa chỉ",
+       "Tuổi",
+       "Tên",
+       "Quốc tịch"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Nationality » nghĩa là quốc tịch, ví dụ: « My nationality is Vietnamese. »"
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « What's you name? » là câu hỏi đúng.",
+      "correct": false,
+      "explanation": "Câu này sai rồi em ơi! Phải dùng « your » (của bạn): « What's your name? »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: ___ is your best friend? – It's Nam.",
+      "options": [
+       "What",
+       "Where",
+       "How",
+       "Who"
+      ],
+      "correctIndex": 3,
+      "explanation": "Hỏi về một người thì dùng « Who » (Ai): « Who is your best friend? » – Bạn thân của em là ai?"
+     }
+    ]
+   },
+   {
+    "title": "Trường lớp & môn học",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "« Môn Toán » trong tiếng Anh là gì?",
+      "options": [
+       "Maths",
+       "Science",
+       "Music",
+       "Art"
+      ],
+      "correctIndex": 0,
+      "explanation": "Môn Toán là « Maths ». Science là Khoa học, Music là Âm nhạc, Art là Mĩ thuật."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Science » là môn học nào?",
+      "options": [
+       "Môn Mĩ thuật",
+       "Môn Khoa học",
+       "Môn Âm nhạc",
+       "Môn Tiếng Việt"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Science » là môn Khoa học, nơi em tìm hiểu về cây cối, con vật và thế giới tự nhiên."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« IT » là tên tiếng Anh của môn Tin học.",
+      "correct": true,
+      "explanation": "Đúng rồi! « IT » (Information Technology) là môn Tin học, em được học về máy tính đó."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « What subjects do you have today? », em trả lời thế nào?",
+      "options": [
+       "It's Monday.",
+       "I'm in class 5B.",
+       "I have Maths and English.",
+       "I go to school by bike."
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu hỏi muốn biết hôm nay em học môn gì, nên trả lời « I have Maths and English. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: I have English ___ Mondays and Wednesdays.",
+      "options": [
+       "in",
+       "at",
+       "on",
+       "of"
+      ],
+      "correctIndex": 2,
+      "explanation": "Trước các ngày trong tuần, em dùng giới từ « on »: on Mondays, on Wednesdays."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« PE » là tên tiếng Anh của môn Âm nhạc.",
+      "correct": false,
+      "explanation": "« PE » là môn Thể dục (Physical Education). Môn Âm nhạc là « Music » nhé em."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « How often do you have Art? », em trả lời thế nào?",
+      "options": [
+       "At school.",
+       "Yes, I do.",
+       "Ms Hoa.",
+       "Twice a week."
+      ],
+      "correctIndex": 3,
+      "explanation": "« How often » hỏi bao lâu một lần, nên em trả lời « Twice a week. » (Hai lần một tuần)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ khác loại:",
+      "options": [
+       "Maths",
+       "Teacher",
+       "History",
+       "Geography"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Teacher » là giáo viên (chỉ người), còn Maths, History, Geography đều là tên môn học."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Timetable » nghĩa là thời khóa biểu.",
+      "correct": true,
+      "explanation": "Chính xác! Nhìn vào « timetable » là em biết mỗi ngày học những môn gì."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: What's your favourite ___? – It's English.",
+      "options": [
+       "school",
+       "class",
+       "teacher",
+       "subject"
+      ],
+      "correctIndex": 3,
+      "explanation": "Câu trả lời là « English » (một môn học), nên câu hỏi là « What's your favourite subject? »"
+     }
+    ]
+   },
+   {
+    "title": "Thói quen hằng ngày",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: She ___ up at six o'clock every morning.",
+      "options": [
+       "get",
+       "gets",
+       "getting",
+       "to get"
+      ],
+      "correctIndex": 1,
+      "explanation": "Chủ ngữ « She » ở thì hiện tại đơn thì động từ thêm « s »: she gets up."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: My brother ___ his teeth after breakfast.",
+      "options": [
+       "brush",
+       "brushs",
+       "brushes",
+       "brushing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Động từ tận cùng bằng « sh » thì thêm « es » khi đi với he/she: brushes."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « He watchs TV in the evening. » là câu đúng.",
+      "correct": false,
+      "explanation": "Động từ tận cùng bằng « ch » phải thêm « es »: « He watches TV in the evening. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Always » nghĩa là gì?",
+      "options": [
+       "Luôn luôn",
+       "Thỉnh thoảng",
+       "Không bao giờ",
+       "Hiếm khi"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Always » nghĩa là luôn luôn. Thỉnh thoảng là « sometimes », không bao giờ là « never »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: I ___ do my homework after dinner. (thường thường)",
+      "options": [
+       "never",
+       "sometimes",
+       "always",
+       "usually"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Usually » nghĩa là thường thường, đúng với gợi ý trong ngoặc của câu."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Never » nghĩa là không bao giờ.",
+      "correct": true,
+      "explanation": "Đúng rồi! Ví dụ: « I never go to bed late. » – Em không bao giờ đi ngủ muộn."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "Mai go to school by bike.",
+       "Mai goes to school by bike.",
+       "Mai going to school by bike.",
+       "Mai gos to school by bike."
+      ],
+      "correctIndex": 1,
+      "explanation": "« Mai » là một người (như « she »), động từ « go » thêm « es » thành « goes »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: ___ your father cook dinner? – Yes, he does.",
+      "options": [
+       "Do",
+       "Is",
+       "Does",
+       "Are"
+      ],
+      "correctIndex": 2,
+      "explanation": "Hỏi về « your father » (như « he ») ở thì hiện tại đơn thì dùng « Does »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Trong câu « I always get up early. », trạng từ « always » đứng trước động từ thường « get ».",
+      "correct": true,
+      "explanation": "Chính xác! Trạng từ chỉ tần suất như always, usually thường đứng trước động từ thường."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Nam ___ like milk.",
+      "options": [
+       "don't",
+       "isn't",
+       "not",
+       "doesn't"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Nam » là ngôi thứ ba số ít nên câu phủ định dùng « doesn't »: Nam doesn't like milk."
+     }
+    ]
+   },
+   {
+    "title": "Ngày hôm qua",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: I ___ at home yesterday.",
+      "options": [
+       "was",
+       "were",
+       "am",
+       "is"
+      ],
+      "correctIndex": 0,
+      "explanation": "Có « yesterday » nên dùng thì quá khứ, và « I » đi với « was »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « They was at the zoo last Sunday. » là câu đúng.",
+      "correct": false,
+      "explanation": "« They » ở quá khứ phải đi với « were »: « They were at the zoo last Sunday. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Dạng quá khứ của « play » là gì?",
+      "options": [
+       "plaied",
+       "played",
+       "playied",
+       "plaid"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Play » có nguyên âm trước « y » nên chỉ cần thêm « ed »: played."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Dạng quá khứ của « go » là gì?",
+      "options": [
+       "goed",
+       "goes",
+       "went",
+       "going"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Go » là động từ bất quy tắc, quá khứ của nó là « went », em nhớ học thuộc nhé."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « What did you do yesterday? », em trả lời thế nào?",
+      "options": [
+       "I watch TV.",
+       "I'm watching TV.",
+       "I will watch TV.",
+       "I watched TV."
+      ],
+      "correctIndex": 3,
+      "explanation": "Câu hỏi về hôm qua nên em trả lời bằng thì quá khứ: « I watched TV. »"
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Dạng quá khứ của « study » là « studied ».",
+      "correct": true,
+      "explanation": "Đúng rồi! Động từ tận cùng bằng phụ âm + « y » thì đổi « y » thành « i » rồi thêm « ed »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: ___ you at school yesterday? – Yes, I was.",
+      "options": [
+       "Was",
+       "Were",
+       "Did",
+       "Are"
+      ],
+      "correctIndex": 1,
+      "explanation": "Câu hỏi với « you » ở quá khứ dùng « Were »: Were you at school yesterday?"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: She ___ her grandparents last weekend.",
+      "options": [
+       "visit",
+       "visits",
+       "visiting",
+       "visited"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Last weekend » là dấu hiệu quá khứ, nên « visit » thêm « ed » thành « visited »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Yesterday » nghĩa là ngày mai.",
+      "correct": false,
+      "explanation": "« Yesterday » là hôm qua. Ngày mai là « tomorrow » nhé em."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu hỏi đúng:",
+      "options": [
+       "Did you go to the park?",
+       "Did you went to the park?",
+       "Do you went to the park?",
+       "Did you going to the park?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sau « Did » dùng động từ nguyên mẫu, nên câu đúng là « Did you go to the park? »"
+     }
+    ]
+   },
+   {
+    "title": "Boss: Tổng ôn lớp 5",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « Where do you live? », em trả lời thế nào?",
+      "options": [
+       "I'm Vietnamese.",
+       "I'm eleven.",
+       "I live at 12 Le Loi Street.",
+       "I like Maths."
+      ],
+      "correctIndex": 2,
+      "explanation": "« Where do you live? » hỏi nơi ở, nên em trả lời bằng địa chỉ: « I live at 12 Le Loi Street. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Linda ___ Music on Tuesdays and Fridays.",
+      "options": [
+       "have",
+       "has",
+       "having",
+       "is have"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Linda » là ngôi thứ ba số ít nên dùng « has »: Linda has Music on Tuesdays and Fridays."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « Yesterday Tom goes to the library. » là câu đúng.",
+      "correct": false,
+      "explanation": "Có « yesterday » nên phải dùng quá khứ: « Yesterday Tom went to the library. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn đáp án đúng: My sister usually ___ to bed at nine, but last night she ___ to bed at eleven.",
+      "options": [
+       "goes / went",
+       "go / went",
+       "goes / goes",
+       "went / goes"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Usually » là thói quen nên dùng « goes »; « last night » là quá khứ nên dùng « went »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Geography » là môn học nào?",
+      "options": [
+       "Lịch sử",
+       "Khoa học",
+       "Tin học",
+       "Địa lí"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Geography » là môn Địa lí, nơi em học về bản đồ, núi sông và các nước. Lịch sử là « History »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Where are you from? – I'm from Australia. » là một cặp hỏi đáp đúng.",
+      "correct": true,
+      "explanation": "Đúng rồi! Hỏi em đến từ đâu thì trả lời « I'm from + tên đất nước »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: We ___ very tired after the long trip yesterday.",
+      "options": [
+       "was",
+       "were",
+       "are",
+       "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "Có « yesterday » nên dùng quá khứ, và « We » đi với « were »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Tìm từ sai trong câu « She always walk to school. »",
+      "options": [
+       "She",
+       "always",
+       "walk",
+       "school"
+      ],
+      "correctIndex": 2,
+      "explanation": "Chủ ngữ « She » ở thì hiện tại đơn nên « walk » phải thêm « s »: She always walks to school."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « Do he play badminton after school? » là câu đúng.",
+      "correct": false,
+      "explanation": "Với « he » phải dùng « Does »: « Does he play badminton after school? »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Sắp xếp thành câu đúng: did / What / do / you / yesterday",
+      "options": [
+       "What did you do yesterday?",
+       "What you did do yesterday?",
+       "Did what you do yesterday?",
+       "What do you did yesterday?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu hỏi quá khứ có dạng: Từ để hỏi + did + chủ ngữ + động từ nguyên mẫu, nên là « What did you do yesterday? »"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "lop-6",
+  "levels": [
+   {
+    "title": "Đang làm gì thế?",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Look! The children ___ in the garden.",
+      "options": [
+       "play",
+       "plays",
+       "are playing",
+       "played"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Look! » cho thấy việc đang diễn ra ngay lúc này, nên dùng hiện tại tiếp diễn: are playing."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: My mum ___ dinner now.",
+      "options": [
+       "cooks",
+       "is cooking",
+       "cook",
+       "cooked"
+      ],
+      "correctIndex": 1,
+      "explanation": "Có « now » (bây giờ) nên dùng hiện tại tiếp diễn; « My mum » đi với « is »: is cooking."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « She is reading a book at the moment. » là câu đúng.",
+      "correct": true,
+      "explanation": "Đúng rồi! « At the moment » là dấu hiệu hiện tại tiếp diễn, và « She » đi với « is reading »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Lan ___ to school by bus every day.",
+      "options": [
+       "goes",
+       "is going",
+       "go",
+       "are going"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Every day » chỉ thói quen nên dùng hiện tại đơn; « Lan » là ngôi thứ ba số ít nên là « goes »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Dạng V-ing của « swim » là gì?",
+      "options": [
+       "swiming",
+       "swimeing",
+       "swims",
+       "swimming"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Swim » có một nguyên âm kẹp giữa hai phụ âm ở cuối, nên gấp đôi « m » rồi thêm « ing »: swimming."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « I am liking ice cream very much. » là câu đúng.",
+      "correct": false,
+      "explanation": "« Like » là động từ chỉ cảm xúc, thường không dùng ở thì tiếp diễn. Câu đúng là « I like ice cream very much. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: What ___ you doing now? – I'm doing my homework.",
+      "options": [
+       "is",
+       "do",
+       "are",
+       "does"
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu hỏi hiện tại tiếp diễn với « you » dùng « are »: What are you doing now?"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Cụm từ nào là dấu hiệu của thì hiện tại tiếp diễn?",
+      "options": [
+       "at the moment",
+       "every day",
+       "usually",
+       "on Sundays"
+      ],
+      "correctIndex": 0,
+      "explanation": "« At the moment » (ngay lúc này) báo hiệu hành động đang xảy ra. Các cụm còn lại chỉ thói quen."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Dạng V-ing của « write » là « writing ».",
+      "correct": true,
+      "explanation": "Chính xác! Động từ tận cùng bằng « e » câm thì bỏ « e » rồi thêm « ing »: writing."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn đáp án đúng: He usually ___ jeans, but today he ___ a uniform.",
+      "options": [
+       "wear / is wearing",
+       "wears / is wearing",
+       "is wearing / wears",
+       "wears / wears"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Usually » là thói quen nên dùng « wears »; « today » nói về việc đang diễn ra nên dùng « is wearing »."
+     }
+    ]
+   },
+   {
+    "title": "So sánh",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Dạng so sánh hơn của « tall » là gì?",
+      "options": [
+       "taller",
+       "more tall",
+       "tallest",
+       "tallier"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Tall » là tính từ ngắn nên chỉ cần thêm « er »: taller (cao hơn)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: An elephant is ___ than a horse.",
+      "options": [
+       "big",
+       "biger",
+       "bigger",
+       "biggest"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Big » kết thúc bằng phụ âm–nguyên âm–phụ âm nên gấp đôi « g »: bigger than."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Dạng so sánh nhất của « good » là « goodest ».",
+      "correct": false,
+      "explanation": "« Good » là tính từ bất quy tắc: good – better – best. Vậy so sánh nhất là « the best »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: This book is ___ than that one. (thú vị hơn)",
+      "options": [
+       "interestinger",
+       "more interesting",
+       "most interesting",
+       "interesting"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Interesting » là tính từ dài nên so sánh hơn dùng « more »: more interesting than."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Ha Noi is one of the ___ cities in Viet Nam.",
+      "options": [
+       "big",
+       "bigger",
+       "more big",
+       "biggest"
+      ],
+      "correctIndex": 3,
+      "explanation": "Sau « one of the » ta dùng so sánh nhất: one of the biggest cities (một trong những thành phố lớn nhất)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Dạng so sánh hơn của « happy » là « happier ».",
+      "correct": true,
+      "explanation": "Đúng rồi! Tính từ tận cùng bằng « y » thì đổi « y » thành « i » rồi thêm « er »: happier."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: My handwriting is bad, but Tom's handwriting is ___.",
+      "options": [
+       "badder",
+       "worse",
+       "worst",
+       "more bad"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Bad » là tính từ bất quy tắc: bad – worse – worst. Ở đây so sánh hai người nên dùng « worse »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Who is ___ student in your class?",
+      "options": [
+       "taller",
+       "tallest",
+       "the tallest",
+       "more tall"
+      ],
+      "correctIndex": 2,
+      "explanation": "So sánh một bạn với cả lớp thì dùng so sánh nhất, và nhớ có « the »: the tallest."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « Summer is hotter than winter. » đúng ngữ pháp.",
+      "correct": true,
+      "explanation": "Chính xác! « Hot » gấp đôi « t » rồi thêm « er »: hotter than."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Of the three girls, Lan is ___ beautiful.",
+      "options": [
+       "more",
+       "the more",
+       "most of",
+       "the most"
+      ],
+      "correctIndex": 3,
+      "explanation": "So sánh trong một nhóm ba người trở lên dùng so sánh nhất; « beautiful » là tính từ dài nên dùng « the most »."
+     }
+    ]
+   },
+   {
+    "title": "Nhà em & giới từ",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: There ___ a sofa in the living room.",
+      "options": [
+       "is",
+       "are",
+       "be",
+       "am"
+      ],
+      "correctIndex": 0,
+      "explanation": "« A sofa » là một vật (số ít) nên dùng « There is »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: There ___ two lamps on the table.",
+      "options": [
+       "is",
+       "are",
+       "has",
+       "have"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Two lamps » là số nhiều nên dùng « There are »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Next to » nghĩa là bên cạnh.",
+      "correct": true,
+      "explanation": "Đúng rồi! Ví dụ: « The bed is next to the window. » – Cái giường ở bên cạnh cửa sổ."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Bathroom » là phòng nào?",
+      "options": [
+       "Phòng ngủ",
+       "Phòng khách",
+       "Phòng tắm",
+       "Nhà bếp"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Bathroom » là phòng tắm. Phòng ngủ là « bedroom », phòng khách là « living room », nhà bếp là « kitchen »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Con mèo nằm ở giữa cái ghế và cái bàn. Chọn câu đúng:",
+      "options": [
+       "The cat is behind the chair and the table.",
+       "The cat is under the chair and the table.",
+       "The cat is next the chair and the table.",
+       "The cat is between the chair and the table."
+      ],
+      "correctIndex": 3,
+      "explanation": "« Between ... and ... » nghĩa là ở giữa hai vật, đúng với vị trí của con mèo."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Behind » nghĩa là ở phía trước.",
+      "correct": false,
+      "explanation": "« Behind » là ở phía sau. Ở phía trước là « in front of » nhé em."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Nhà em thường nấu ăn ở phòng nào?",
+      "options": [
+       "bedroom",
+       "kitchen",
+       "bathroom",
+       "living room"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Kitchen » là nhà bếp, nơi cả nhà nấu ăn hằng ngày."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: The dog is sleeping ___ the bed. (ở dưới)",
+      "options": [
+       "on",
+       "in",
+       "under",
+       "between"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Under » nghĩa là ở dưới, nên chú chó đang ngủ dưới gầm giường: under the bed."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Is there a fridge in your kitchen? – Yes, there are. » là một cặp hỏi đáp đúng.",
+      "correct": false,
+      "explanation": "Hỏi bằng « Is there » thì trả lời « Yes, there is. » vì « a fridge » là số ít."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: ___ there any chairs in the room?",
+      "options": [
+       "Are",
+       "Is",
+       "Do",
+       "Has"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Any chairs » là số nhiều nên câu hỏi dùng « Are there »."
+     }
+    ]
+   },
+   {
+    "title": "Kế hoạch tương lai",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: I think it ___ rain tomorrow.",
+      "options": [
+       "will",
+       "is",
+       "does",
+       "was"
+      ],
+      "correctIndex": 0,
+      "explanation": "« I think » là đoán về tương lai, nên dùng « will » + động từ nguyên mẫu: will rain."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Look at those dark clouds! It is ___ rain.",
+      "options": [
+       "will",
+       "going to",
+       "go to",
+       "going"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thấy mây đen là có dấu hiệu sắp mưa, nên dùng « be going to »: It is going to rain."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « She will goes to the cinema tomorrow. » là câu đúng.",
+      "correct": false,
+      "explanation": "Sau « will » luôn dùng động từ nguyên mẫu: « She will go to the cinema tomorrow. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Cụm từ nào chỉ thời gian trong tương lai?",
+      "options": [
+       "yesterday",
+       "last week",
+       "next week",
+       "two days ago"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Next week » nghĩa là tuần sau, nói về tương lai. Các cụm còn lại đều chỉ quá khứ."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: My parents ___ going to buy a new car.",
+      "options": [
+       "is",
+       "am",
+       "be",
+       "are"
+      ],
+      "correctIndex": 3,
+      "explanation": "« My parents » là số nhiều (như « they ») nên đi với « are »: are going to buy."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « I'm going to visit Hue next summer. » nói về một kế hoạch em đã dự định trước.",
+      "correct": true,
+      "explanation": "Đúng rồi! « Be going to » thường dùng để nói về kế hoạch, dự định đã có từ trước."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu phủ định đúng:",
+      "options": [
+       "I won't be late tomorrow.",
+       "I willn't be late tomorrow.",
+       "I don't will be late tomorrow.",
+       "I will not to be late tomorrow."
+      ],
+      "correctIndex": 0,
+      "explanation": "Phủ định của « will » là « will not », viết tắt là « won't »: I won't be late tomorrow."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: ___ you help me with my homework tonight? – Sure, I will.",
+      "options": [
+       "Are",
+       "Will",
+       "Do",
+       "Going"
+      ],
+      "correctIndex": 1,
+      "explanation": "Câu trả lời là « I will », nên câu hỏi bắt đầu bằng « Will »: Will you help me ...?"
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Tomorrow » nghĩa là ngày mai.",
+      "correct": true,
+      "explanation": "Chính xác! « See you tomorrow! » nghĩa là « Hẹn gặp lại ngày mai! »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn hỏi « What are you going to do this weekend? », em trả lời thế nào?",
+      "options": [
+       "I went camping with my family.",
+       "I go camping every day.",
+       "I'm going to go camping with my family.",
+       "I was camping."
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu hỏi dùng « be going to » về kế hoạch cuối tuần này, nên em trả lời « I'm going to go camping ... »."
+     }
+    ]
+   },
+   {
+    "title": "Boss: Tổng ôn lớp 6",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Be quiet! The baby ___.",
+      "options": [
+       "sleeps",
+       "is sleeping",
+       "slept",
+       "sleep"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Be quiet! » cho thấy em bé đang ngủ ngay lúc này, nên dùng hiện tại tiếp diễn: is sleeping."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Mount Everest is ___ mountain in the world.",
+      "options": [
+       "high",
+       "higher",
+       "the highest",
+       "highest"
+      ],
+      "correctIndex": 2,
+      "explanation": "So sánh với tất cả các ngọn núi trên thế giới nên dùng so sánh nhất có « the »: the highest."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « There are a big garden behind my house. » là câu đúng.",
+      "correct": false,
+      "explanation": "« A big garden » là số ít nên phải dùng « There is a big garden behind my house. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "My house is bigger than yours.",
+       "My house is more big than yours.",
+       "My house is biggest than yours.",
+       "My house is the bigger than yours."
+      ],
+      "correctIndex": 0,
+      "explanation": "« Big » là tính từ ngắn nên so sánh hơn là « bigger than », không dùng « more »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: Next year, my brother ___ 15 years old.",
+      "options": [
+       "is",
+       "was",
+       "will be",
+       "being"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Next year » là tương lai nên dùng « will be »: Next year, my brother will be 15."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« What are you doing now? – I watch TV. » là một cặp hỏi đáp đúng.",
+      "correct": false,
+      "explanation": "Câu hỏi ở hiện tại tiếp diễn nên phải trả lời « I'm watching TV. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Tìm phần sai trong câu « There is a lamp between the bed or the desk. »",
+      "options": [
+       "There is",
+       "lamp",
+       "between",
+       "or"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cấu trúc đúng là « between ... and ... », nên phải sửa « or » thành « and »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn đáp án đúng: My sister ___ her homework every evening, but tonight she ___ a film.",
+      "options": [
+       "is doing / watches",
+       "does / watches",
+       "do / watching",
+       "does / is watching"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Every evening » là thói quen nên dùng « does »; « tonight » nói về việc đang diễn ra nên dùng « is watching »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « This is the best day of my life! » dùng đúng dạng so sánh nhất của « good ».",
+      "correct": true,
+      "explanation": "Đúng rồi! good – better – best, nên so sánh nhất là « the best »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: We have bought the tickets. We ___ fly to Da Nang next Friday.",
+      "options": [
+       "will be",
+       "are going to",
+       "are",
+       "going to"
+      ],
+      "correctIndex": 1,
+      "explanation": "Đã mua vé là đã có kế hoạch, nên dùng « be going to »: We are going to fly ... Các đáp án khác sai ngữ pháp."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "lop-7",
+  "levels": [
+   {
+    "title": "Quá khứ bất quy tắc",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « She ___ to school by bus yesterday. »",
+      "options": [
+       "goes",
+       "went",
+       "goed",
+       "gone"
+      ],
+      "correctIndex": 1,
+      "explanation": "Có « yesterday » nên em dùng thì quá khứ đơn. « Go » là động từ bất quy tắc, quá khứ của nó là « went »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Dạng quá khứ của « buy » là gì?",
+      "options": [
+       "bought",
+       "buyed",
+       "brought",
+       "buied"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Buy » → « bought ». Em đừng nhầm với « brought », là quá khứ của « bring » nhé."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Dạng quá khứ của « eat » là « ate ».",
+      "correct": true,
+      "explanation": "Đúng rồi! « Eat » là động từ bất quy tắc: eat → ate."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « ___ you watch the football match last night? »",
+      "options": [
+       "Do",
+       "Were",
+       "Did",
+       "Are"
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu hỏi quá khứ đơn với động từ thường có dạng « Did + chủ ngữ + động từ nguyên mẫu? »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "I didn't saw him yesterday.",
+       "I didn't see him yesterday.",
+       "I don't saw him yesterday.",
+       "I not see him yesterday."
+      ],
+      "correctIndex": 1,
+      "explanation": "Câu phủ định quá khứ đơn là « didn't + động từ nguyên mẫu », nên « see » giữ nguyên, không đổi thành « saw »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « He didn't went to the party. » là câu đúng.",
+      "correct": false,
+      "explanation": "Sau « didn't » em phải dùng động từ nguyên mẫu. Câu đúng là « He didn't go to the party. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « Last summer, my family ___ a trip to Ha Long Bay. »",
+      "options": [
+       "take",
+       "takes",
+       "taked",
+       "took"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Last summer » báo hiệu thì quá khứ đơn. Quá khứ bất quy tắc của « take » là « took »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Dạng quá khứ đơn của « write » là gì?",
+      "options": [
+       "wrote",
+       "writed",
+       "written",
+       "writes"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Write » → « wrote ». Còn « written » là quá khứ phân từ (V3), dùng cho thì hoàn thành em nhé."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Did Nam have breakfast this morning? » – Nam đã ăn rồi. Câu trả lời đúng là:",
+      "options": [
+       "Yes, he does.",
+       "Yes, he was.",
+       "Yes, he had.",
+       "Yes, he did."
+      ],
+      "correctIndex": 3,
+      "explanation": "Câu hỏi bắt đầu bằng « Did » thì câu trả lời ngắn cũng dùng « did »: Yes, he did."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Dạng quá khứ của « think » là « thought ».",
+      "correct": true,
+      "explanation": "Chính xác! « Think » là động từ bất quy tắc: think → thought."
+     }
+    ]
+   },
+   {
+    "title": "Đếm được & không đếm được",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Danh từ nào KHÔNG đếm được?",
+      "options": [
+       "apple",
+       "egg",
+       "rice",
+       "banana"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Rice » (gạo, cơm) là danh từ không đếm được, ta không nói « two rices ». Các từ còn lại đều đếm được."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « How ___ milk do you drink every day? »",
+      "options": [
+       "many",
+       "much",
+       "any",
+       "a"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Milk » là danh từ không đếm được nên em hỏi số lượng bằng « How much »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Bread » là danh từ đếm được nên ta có thể nói « two breads ».",
+      "correct": false,
+      "explanation": "« Bread » không đếm được. Em nói « two loaves of bread » hoặc « two pieces of bread » nhé."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « There aren't ___ eggs in the fridge. »",
+      "options": [
+       "some",
+       "much",
+       "any",
+       "a"
+      ],
+      "correctIndex": 2,
+      "explanation": "Trong câu phủ định em dùng « any ». « Much » chỉ đi với danh từ không đếm được, còn « eggs » đếm được."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « How ___ students are there in your class? »",
+      "options": [
+       "many",
+       "much",
+       "any",
+       "some"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Students » là danh từ đếm được số nhiều, nên em hỏi số lượng bằng « How many »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« A lot of » dùng được với cả danh từ đếm được và danh từ không đếm được.",
+      "correct": true,
+      "explanation": "Đúng rồi! Ví dụ: « a lot of books » (đếm được) và « a lot of water » (không đếm được)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « I'd like ___ water, please. »",
+      "options": [
+       "many",
+       "a",
+       "an",
+       "some"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Water » không đếm được nên không dùng « a/an » hay « many ». Trong lời đề nghị lịch sự, em dùng « some »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « We don't have ___ time left. Hurry up! »",
+      "options": [
+       "many",
+       "much",
+       "a few",
+       "a"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Time » (thời gian) là danh từ không đếm được, và trong câu phủ định ta thường dùng « much »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "There are a lot of oranges.",
+       "There is a lot of oranges.",
+       "There are much oranges.",
+       "There is many oranges."
+      ],
+      "correctIndex": 0,
+      "explanation": "« Oranges » là danh từ số nhiều nên dùng « There are », và « a lot of » đi được với danh từ đếm được."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « Are there any sugar in the jar? » là câu đúng.",
+      "correct": false,
+      "explanation": "« Sugar » không đếm được nên động từ chia số ít. Câu đúng là « Is there any sugar in the jar? »"
+     }
+    ]
+   },
+   {
+    "title": "Sống khỏe",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « You have a cold. You ___ stay at home and rest. »",
+      "options": [
+       "shouldn't",
+       "should",
+       "don't",
+       "aren't"
+      ],
+      "correctIndex": 1,
+      "explanation": "Khi khuyên ai nên làm gì, em dùng « should + động từ nguyên mẫu ». Bị cảm thì nên ở nhà nghỉ ngơi."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« I have a toothache. » nghĩa là gì?",
+      "options": [
+       "Tôi bị đau đầu.",
+       "Tôi bị đau bụng.",
+       "Tôi bị đau răng.",
+       "Tôi bị đau họng."
+      ],
+      "correctIndex": 2,
+      "explanation": "« Tooth » là răng, « ache » là cơn đau, nên « toothache » là đau răng. Đau đầu là « headache » em nhé."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Sau « should » ta dùng động từ nguyên mẫu không có « to ».",
+      "correct": true,
+      "explanation": "Đúng rồi! Ví dụ: « You should drink more water. », không nói « should to drink »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn em bị « sunburn » (cháy nắng). Lời khuyên nào phù hợp?",
+      "options": [
+       "You should stay out of the sun.",
+       "You should play outside at noon.",
+       "You should eat more sweets.",
+       "You shouldn't wear a hat."
+      ],
+      "correctIndex": 0,
+      "explanation": "Bị cháy nắng thì nên tránh ánh nắng mặt trời: « You should stay out of the sun. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « You ___ eat too much junk food. It's bad for your health. »",
+      "options": [
+       "should",
+       "must to",
+       "shouldn't",
+       "should to"
+      ],
+      "correctIndex": 2,
+      "explanation": "Đồ ăn vặt có hại cho sức khỏe nên em khuyên « shouldn't » (không nên). « Must to » và « should to » đều sai ngữ pháp."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « You should to drink more water. » là câu đúng.",
+      "correct": false,
+      "explanation": "Sau « should » không có « to ». Câu đúng là « You should drink more water. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Bạn em bị « chapped lips » (môi nứt nẻ). Hoàn thành lời khuyên: « You should ___. »",
+      "options": [
+       "stay up late",
+       "eat lots of sweets",
+       "sit in the sun all day",
+       "use lip balm"
+      ],
+      "correctIndex": 3,
+      "explanation": "Môi nứt nẻ thì nên dùng son dưỡng môi: « You should use lip balm. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Cụm từ nào chỉ một thói quen TỐT cho sức khỏe?",
+      "options": [
+       "doing exercise",
+       "eating junk food",
+       "staying up late",
+       "watching TV all day"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Doing exercise » (tập thể dục) giúp em khỏe mạnh. Các thói quen còn lại đều có hại."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« What's the matter? » – « I have a headache. » Lời khuyên phù hợp là:",
+      "options": [
+       "You should listen to loud music.",
+       "You should take a rest.",
+       "You should play computer games.",
+       "You should stay up late."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bị đau đầu thì nên nghỉ ngơi: « You should take a rest. » Nghe nhạc to hay thức khuya sẽ làm đau đầu thêm."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Sore throat » nghĩa là đau lưng.",
+      "correct": false,
+      "explanation": "« Sore throat » là đau họng. Đau lưng là « backache » em nhé."
+     }
+    ]
+   },
+   {
+    "title": "Tần suất & cụm động từ",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng vị trí của « always »:",
+      "options": [
+       "I get always up at six.",
+       "I always get up at six.",
+       "I get up always at six.",
+       "Always I get up at six."
+      ],
+      "correctIndex": 1,
+      "explanation": "Trạng từ chỉ tần suất đứng trước động từ thường, nên « always » đứng trước « get up »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Sắp xếp thành câu đúng: « late / is / never / Tom / for school »",
+      "options": [
+       "Tom is never late for school.",
+       "Never Tom is late for school.",
+       "Tom is late never for school.",
+       "Tom is late for school never."
+      ],
+      "correctIndex": 0,
+      "explanation": "Trạng từ chỉ tần suất đứng sau động từ « to be », nên « never » đứng sau « is »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Trạng từ chỉ tần suất thường đứng trước động từ thường và đứng sau động từ « to be ».",
+      "correct": true,
+      "explanation": "Đúng rồi! Ví dụ: « She often reads books. » và « She is often happy. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Turn on » nghĩa là gì?",
+      "options": [
+       "Tắt",
+       "Tìm kiếm",
+       "Bật",
+       "Thức dậy"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Turn on » là bật (đèn, TV...). Tắt là « turn off », tìm kiếm là « look for », thức dậy là « get up »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « I can't find my keys. Can you help me look ___ them? »",
+      "options": [
+       "at",
+       "for",
+       "after",
+       "up"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Look for » nghĩa là tìm kiếm. Không tìm thấy chìa khóa nên em nhờ bạn « look for » giúp."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Never » có nghĩa là « luôn luôn ».",
+      "correct": false,
+      "explanation": "« Never » nghĩa là không bao giờ. « Luôn luôn » là « always » em nhé."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Trạng từ nào chỉ tần suất CAO NHẤT?",
+      "options": [
+       "sometimes",
+       "rarely",
+       "never",
+       "always"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Always » (luôn luôn) là mức cao nhất. Thứ tự giảm dần: always > usually > often > sometimes > rarely > never."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn cụm từ đúng: « It's cold outside. ___ your coat before you go out. »",
+      "options": [
+       "Put on",
+       "Take off",
+       "Turn on",
+       "Give up"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Put on » là mặc vào. Trời lạnh thì phải mặc áo khoác trước khi ra ngoài."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Give up » nghĩa là gì?",
+      "options": [
+       "Đứng dậy",
+       "Lớn lên",
+       "Từ bỏ",
+       "Đi ra ngoài"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Give up » là từ bỏ, ví dụ « Don't give up! » (Đừng bỏ cuộc!). Lớn lên là « grow up »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« How often do you play badminton? » – « Twice a week. » là cặp hỏi – đáp đúng.",
+      "correct": true,
+      "explanation": "Chính xác! « How often » hỏi về mức độ thường xuyên, nên trả lời « Twice a week » (hai lần một tuần) là hợp lý."
+     }
+    ]
+   },
+   {
+    "title": "Boss: Tổng ôn lớp 7",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « Yesterday, I ___ my old friend at the market and we ___ a lot. »",
+      "options": [
+       "meet / talk",
+       "met / talked",
+       "met / talk",
+       "meeted / talked"
+      ],
+      "correctIndex": 1,
+      "explanation": "Có « yesterday » nên cả hai động từ đều ở quá khứ đơn: « meet » bất quy tắc → « met », « talk » có quy tắc → « talked »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « How ___ sugar did you put in the cake? »",
+      "options": [
+       "a few",
+       "many",
+       "any",
+       "much"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Sugar » là danh từ không đếm được nên em hỏi số lượng bằng « How much »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « She doesn't usually eats fast food. » là câu đúng.",
+      "correct": false,
+      "explanation": "Sau « doesn't » động từ phải ở dạng nguyên mẫu. Câu đúng là « She doesn't usually eat fast food. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn lời khuyên đúng ngữ pháp:",
+      "options": [
+       "You should goes to bed early.",
+       "You shoulds go to bed early.",
+       "You should go to bed early.",
+       "You should going to bed early."
+      ],
+      "correctIndex": 2,
+      "explanation": "« Should » không thêm « s » và luôn đi với động từ nguyên mẫu: « You should go to bed early. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « When I was in Ha Noi last week, I ___ a lot of photos but I didn't ___ any souvenirs. »",
+      "options": [
+       "took / buy",
+       "take / bought",
+       "took / bought",
+       "taked / buy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu khẳng định quá khứ dùng « took » (quá khứ của take), còn sau « didn't » phải dùng động từ nguyên mẫu « buy »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « There weren't many traffic on the road this morning. » là câu đúng.",
+      "correct": false,
+      "explanation": "« Traffic » là danh từ không đếm được, nên câu đúng là « There wasn't much traffic on the road this morning. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « My brother hardly ever ___ up early on Sundays. »",
+      "options": [
+       "get",
+       "gets",
+       "getting",
+       "to get"
+      ],
+      "correctIndex": 1,
+      "explanation": "Câu nói về thói quen ở hiện tại đơn, chủ ngữ « my brother » là ngôi thứ ba số ít nên động từ thêm « s »: gets."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "How much money do you have?",
+       "How many money do you have?",
+       "How much moneys do you have?",
+       "How many moneys do you have?"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Money » là danh từ không đếm được, không thêm « s » và đi với « How much »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Did you turn off the lights before you left? » – « Yes, I ___. »",
+      "options": [
+       "do",
+       "was",
+       "did",
+       "turned"
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu hỏi bắt đầu bằng « Did » nên câu trả lời ngắn dùng « did »: Yes, I did."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Trong câu « You shouldn't eat too many sweets. », ta dùng « many » vì « sweets » là danh từ đếm được.",
+      "correct": true,
+      "explanation": "Đúng rồi! « Sweets » (kẹo) đếm được và ở số nhiều, nên đi với « many »."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "lop-8",
+  "levels": [
+   {
+    "title": "Hiện tại hoàn thành",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « I have lived in this city ___ 2015. »",
+      "options": [
+       "for",
+       "since",
+       "ago",
+       "already"
+      ],
+      "correctIndex": 1,
+      "explanation": "« 2015 » là một mốc thời gian, nên em dùng « since » (kể từ)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « She has studied English ___ five years. »",
+      "options": [
+       "since",
+       "ago",
+       "for",
+       "yet"
+      ],
+      "correctIndex": 2,
+      "explanation": "« Five years » là một khoảng thời gian, nên em dùng « for » (trong khoảng)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Have you ever been to Da Lat? » là câu hỏi ở thì hiện tại hoàn thành.",
+      "correct": true,
+      "explanation": "Đúng rồi! Câu có dạng « Have + chủ ngữ + V3 », và « ever » hỏi về trải nghiệm đã từng."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « We ___ that film yet. »",
+      "options": [
+       "haven't seen",
+       "didn't see",
+       "don't see",
+       "hasn't seen"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Yet » trong câu phủ định là dấu hiệu của hiện tại hoàn thành. Chủ ngữ « we » đi với « haven't »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « My father ___ to Japan last year. »",
+      "options": [
+       "has gone",
+       "has been",
+       "goes",
+       "went"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Last year » là thời điểm xác định trong quá khứ, nên em dùng quá khứ đơn « went », không dùng hiện tại hoàn thành."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « She has visited Hue last month. » là câu đúng.",
+      "correct": false,
+      "explanation": "Có « last month » (thời điểm xác định) nên phải dùng quá khứ đơn: « She visited Hue last month. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Quá khứ phân từ (V3) của « write » là gì?",
+      "options": [
+       "written",
+       "wrote",
+       "writed",
+       "writing"
+      ],
+      "correctIndex": 0,
+      "explanation": "« Write » là động từ bất quy tắc: write → wrote → written. Thì hiện tại hoàn thành dùng V3 « written »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « I haven't finished my project ___. »",
+      "options": [
+       "already",
+       "yet",
+       "since",
+       "ever"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Yet » (chưa) dùng ở cuối câu phủ định thì hiện tại hoàn thành. « Already » dùng trong câu khẳng định em nhé."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "He has never eat sushi.",
+       "He never has eaten sushi.",
+       "He have never eaten sushi.",
+       "He has never eaten sushi."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cấu trúc đúng là « has + never + V3 ». Chủ ngữ « he » đi với « has », và V3 của « eat » là « eaten »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« For » dùng trước một mốc thời gian, ví dụ « for 2020 ».",
+      "correct": false,
+      "explanation": "« For » đi với khoảng thời gian (for two years). Mốc thời gian thì dùng « since »: since 2020."
+     }
+    ]
+   },
+   {
+    "title": "Câu điều kiện loại 1",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « If it ___ tomorrow, we will stay at home. »",
+      "options": [
+       "rains",
+       "will rain",
+       "rained",
+       "rain"
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu điều kiện loại 1: mệnh đề « if » dùng hiện tại đơn. Chủ ngữ « it » nên động từ thêm « s »: rains."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « If you study hard, you ___ the exam. »",
+      "options": [
+       "pass",
+       "passed",
+       "will pass",
+       "would pass"
+      ],
+      "correctIndex": 2,
+      "explanation": "Mệnh đề chính của câu điều kiện loại 1 dùng « will + động từ nguyên mẫu »: you will pass."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Trong câu điều kiện loại 1, mệnh đề « if » dùng thì hiện tại đơn.",
+      "correct": true,
+      "explanation": "Đúng rồi! Công thức: If + hiện tại đơn, S + will + V nguyên mẫu."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "« Unless » có nghĩa tương đương với:",
+      "options": [
+       "if",
+       "if ... not",
+       "because",
+       "although"
+      ],
+      "correctIndex": 1,
+      "explanation": "« Unless » nghĩa là « trừ khi », tương đương « if ... not » (nếu ... không)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « If she will come, I will tell her the news. » là câu đúng.",
+      "correct": false,
+      "explanation": "Mệnh đề « if » không dùng « will ». Câu đúng là « If she comes, I will tell her the news. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « ___ you hurry, you will miss the bus. »",
+      "options": [
+       "If",
+       "Because",
+       "So",
+       "Unless"
+      ],
+      "correctIndex": 3,
+      "explanation": "« Unless you hurry » nghĩa là « nếu em không nhanh lên », khi đó em sẽ lỡ xe buýt. Câu dùng « Unless » mới hợp nghĩa."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "If we will recycle more, we reduce waste.",
+       "If we recycled more, we will reduce waste.",
+       "If we recycle more, we will reduce waste.",
+       "If we recycle more, we reduced waste."
+      ],
+      "correctIndex": 2,
+      "explanation": "Câu điều kiện loại 1: « If + hiện tại đơn » và mệnh đề chính « will + V nguyên mẫu »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « If the weather ___ nice, we'll go camping. »",
+      "options": [
+       "is",
+       "will be",
+       "be",
+       "were"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mệnh đề « if » dùng hiện tại đơn, « the weather » là số ít nên dùng « is »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « Unless you water the plants, they ___ die. »",
+      "options": [
+       "won't",
+       "will",
+       "don't",
+       "didn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "Nếu không tưới nước thì cây sẽ chết, nên mệnh đề chính dùng « will die »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « You will be late unless you hurry. » là câu đúng.",
+      "correct": true,
+      "explanation": "Đúng rồi! Mệnh đề « unless » có thể đứng sau mệnh đề chính, và khi đó không cần dấu phẩy."
+     }
+    ]
+   },
+   {
+    "title": "Câu bị động",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Công thức câu bị động thì hiện tại đơn là gì?",
+      "options": [
+       "am/is/are + V3",
+       "was/were + V3",
+       "have/has + V3",
+       "will + V nguyên mẫu"
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu bị động thì hiện tại đơn: « am/is/are + V3 (quá khứ phân từ) ». « Was/were + V3 » là bị động quá khứ đơn."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « English ___ in many countries. »",
+      "options": [
+       "speaks",
+       "is spoken",
+       "is speaking",
+       "spoke"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tiếng Anh « được nói » chứ không tự nói, nên dùng bị động hiện tại đơn: is + V3 (spoken)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « This house built in 1990. » là câu bị động đúng.",
+      "correct": false,
+      "explanation": "Câu bị động cần « to be ». Câu đúng là « This house was built in 1990. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « The Mona Lisa ___ by Leonardo da Vinci. »",
+      "options": [
+       "painted",
+       "is painting",
+       "was painted",
+       "paints"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bức tranh « được vẽ » trong quá khứ nên dùng bị động quá khứ đơn: was + V3 (painted)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chuyển sang câu bị động: « They clean the classroom every day. »",
+      "options": [
+       "The classroom was cleaned every day.",
+       "The classroom cleans every day.",
+       "The classroom is cleaning every day.",
+       "The classroom is cleaned every day."
+      ],
+      "correctIndex": 3,
+      "explanation": "Câu gốc ở hiện tại đơn, nên câu bị động dùng « is + V3 »: The classroom is cleaned every day."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « The letters was sent yesterday. » là câu đúng.",
+      "correct": false,
+      "explanation": "« The letters » là số nhiều nên dùng « were »: The letters were sent yesterday."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chuyển sang câu bị động: « My mother made this cake. »",
+      "options": [
+       "This cake was made by my mother.",
+       "This cake is made by my mother.",
+       "This cake made by my mother.",
+       "This cake was make by my mother."
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu gốc ở quá khứ đơn (made), nên câu bị động dùng « was + V3 »: This cake was made by my mother."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « Pho ___ with rice noodles and beef. »",
+      "options": [
+       "make",
+       "is made",
+       "are made",
+       "makes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Phở « được làm » từ bánh phở và thịt bò, nên dùng bị động hiện tại đơn. « Pho » là số ít nên dùng « is made »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « My bike ___ last night. »",
+      "options": [
+       "stole",
+       "is stolen",
+       "was stolen",
+       "was stole"
+      ],
+      "correctIndex": 2,
+      "explanation": "Xe đạp « bị lấy trộm » tối qua nên dùng bị động quá khứ đơn: was + V3. V3 của « steal » là « stolen »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Trong câu bị động, ta dùng « by » để chỉ người hoặc vật thực hiện hành động.",
+      "correct": true,
+      "explanation": "Đúng rồi! Ví dụ: « The song was written by my uncle. » (Bài hát được viết bởi chú mình.)"
+     }
+    ]
+   },
+   {
+    "title": "Câu tường thuật",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "She said, « I am tired. » → « She said that she ___ tired. »",
+      "options": [
+       "is",
+       "was",
+       "were",
+       "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "Khi tường thuật, em lùi thì: hiện tại đơn « am » → quá khứ đơn « was »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chuyển sang câu tường thuật: Tom said, « I like football. »",
+      "options": [
+       "Tom said that I like football.",
+       "Tom said me that he liked football.",
+       "Tom said that he liked football.",
+       "Tom told that he liked football."
+      ],
+      "correctIndex": 2,
+      "explanation": "Em đổi « I » thành « he » và lùi thì « like » → « liked ». « Said » không đi trực tiếp với tân ngữ, còn « told » thì cần tân ngữ."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Sau « tell » ta cần tân ngữ chỉ người nghe, ví dụ « She told me that... ».",
+      "correct": true,
+      "explanation": "Đúng rồi! « Tell + người nghe + that... », còn « say » thì không cần tân ngữ: « She said that... »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « He ___ me that he was busy. »",
+      "options": [
+       "told",
+       "said",
+       "spoke",
+       "talked"
+      ],
+      "correctIndex": 0,
+      "explanation": "Có tân ngữ « me » ngay sau động từ nên em dùng « told ». Ta không nói « said me »."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « She said me that she was hungry. » là câu đúng.",
+      "correct": false,
+      "explanation": "« Say » không đi trực tiếp với tân ngữ. Em có thể nói « She told me that she was hungry. » hoặc « She said that she was hungry. »"
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Khi tường thuật, « tomorrow » thường được đổi thành:",
+      "options": [
+       "yesterday",
+       "the day before",
+       "today",
+       "the next day"
+      ],
+      "correctIndex": 3,
+      "explanation": "Trong câu tường thuật, « tomorrow » thường đổi thành « the next day » (ngày hôm sau)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Lan said, « I am watching TV. » → « Lan said that she ___ TV. »",
+      "options": [
+       "is watching",
+       "was watching",
+       "watches",
+       "watched"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hiện tại tiếp diễn « am watching » lùi thì thành quá khứ tiếp diễn « was watching »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chuyển sang câu tường thuật: My friends said, « We will visit you. »",
+      "options": [
+       "My friends said that they would visit me.",
+       "My friends said that we will visit you.",
+       "My friends said that they would visit you.",
+       "My friends said that we would visit me."
+      ],
+      "correctIndex": 0,
+      "explanation": "Em đổi « we » → « they », « you » → « me » (người nghe là mình), và « will » → « would »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Khi tường thuật, « here » thường được đổi thành:",
+      "options": [
+       "this",
+       "now",
+       "there",
+       "that"
+      ],
+      "correctIndex": 2,
+      "explanation": "Trong câu tường thuật, « here » (ở đây) thường đổi thành « there » (ở đó)."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Khi tường thuật, « can » được đổi thành « could ».",
+      "correct": true,
+      "explanation": "Chính xác! Ví dụ: « I can swim. » → He said that he could swim."
+     }
+    ]
+   },
+   {
+    "title": "Boss: Tổng ôn lớp 8",
+    "questions": [
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « If you ___ the button, the machine will start. »",
+      "options": [
+       "press",
+       "pressed",
+       "will press",
+       "pressing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu điều kiện loại 1: mệnh đề « if » dùng hiện tại đơn, nên « If you press the button »."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « This bridge ___ in 2010. »",
+      "options": [
+       "built",
+       "is built",
+       "was built",
+       "has built"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cây cầu « được xây » vào năm 2010 (quá khứ), nên dùng bị động quá khứ đơn: was built."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « I have known her since five years. » là câu đúng.",
+      "correct": false,
+      "explanation": "« Five years » là khoảng thời gian nên phải dùng « for »: I have known her for five years."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chuyển sang câu tường thuật: Nam said, « I can swim very well. »",
+      "options": [
+       "Nam said that I could swim very well.",
+       "Nam told that he could swim very well.",
+       "Nam said me that he could swim very well.",
+       "Nam said that he could swim very well."
+      ],
+      "correctIndex": 3,
+      "explanation": "Em đổi « I » → « he », « can » → « could », và dùng « said that » (không có tân ngữ sau « said »)."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « Unless the rubbish ___ regularly, the street will be dirty. »",
+      "options": [
+       "collects",
+       "is collected",
+       "will be collected",
+       "was collected"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rác « được thu gom » nên dùng bị động, và mệnh đề « unless » dùng hiện tại đơn: is collected."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "« Have you ever been to Phu Quoc? » – « Yes, I went there last summer. » là cặp hỏi – đáp đúng.",
+      "correct": true,
+      "explanation": "Đúng rồi! Hỏi trải nghiệm dùng hiện tại hoàn thành, còn khi nói rõ thời điểm « last summer » thì dùng quá khứ đơn."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « She ___ her keys, so she can't open the door. »",
+      "options": [
+       "has lost",
+       "loses",
+       "is losing",
+       "lose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Việc mất chìa khóa xảy ra trước và vẫn ảnh hưởng đến hiện tại (không mở được cửa), nên dùng hiện tại hoàn thành: has lost."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn câu đúng:",
+      "options": [
+       "Many trees is cut down every year.",
+       "Many trees cut down every year.",
+       "Many trees are cut down every year.",
+       "Many trees are cut downed every year."
+      ],
+      "correctIndex": 2,
+      "explanation": "« Many trees » số nhiều nên dùng « are », và V3 của « cut » vẫn là « cut »: are cut down."
+     },
+     {
+      "type": "MCQ",
+      "prompt": "Chọn từ đúng: « My teacher ___ us that we should read more books. »",
+      "options": [
+       "said",
+       "told",
+       "spoke",
+       "talked"
+      ],
+      "correctIndex": 1,
+      "explanation": "Có tân ngữ « us » ngay sau động từ nên em dùng « told ». « Said » không đi trực tiếp với tân ngữ."
+     },
+     {
+      "type": "TRUE_FALSE",
+      "prompt": "Câu « If it doesn't rain, we will have a picnic. » có nghĩa giống câu « Unless it rains, we will have a picnic. »",
+      "correct": true,
+      "explanation": "Chính xác! « Unless » = « if ... not », nên « unless it rains » nghĩa là « if it doesn't rain »."
+     }
+    ]
+   }
+  ]
+ }
+]

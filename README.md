@@ -25,7 +25,9 @@ Cách hoạt động:
 
 ## Trò chơi Vũ trụ Tri thức
 
-Bấm vào hành tinh ở giữa carousel (hoặc ruy-băng tên khóa) để vào game học tập chuyển từ repo `Edtech-game`: bản đồ thế giới 2.5D, mỗi level 10 câu hỏi rải trên bản đồ, level 5 của Cyber World là trận đánh boss. Bốn hành tinh có game: Tiếng Anh lớp 3 → `tieng-anh`, Toán tư duy → `toan-ly-hoa`, Tin học → `ai-cong-nghe`, Lập trình Scratch → `cyber-world` (xem `worldSlug` trong `src/data/courses.ts`). Ba hành tinh còn lại báo "sắp mở".
+Game chỉ dạy **tiếng Anh**. Bấm vào hành tinh ở giữa carousel (hoặc ruy-băng tên khóa) để vào game học tập chuyển từ repo `Edtech-game`: bản đồ thế giới 2.5D, mỗi level 10 câu hỏi rải trên bản đồ, level cuối của mỗi hành tinh là trận đánh boss. Tám hành tinh là tám trình độ: Tiếng Anh lớp 5 → `lop-5`, lớp 6 → `lop-6`, lớp 7 → `lop-7`, lớp 8 → `lop-8`, rồi `b1`, `b2`, `c1`, `c2` (xem `WORLD_META` trong `src/lib/game/worlds.ts`). Lớp 5–8 ra đề bằng tiếng Việt; B1–C2 ra đề hoàn toàn bằng tiếng Anh.
+
+**Thêm câu hỏi / chủ đề**: sửa file CSV trong `content/english/` (mỗi hành tinh một file, mỗi chủ đề là một level) rồi chạy `npm run questions`. Định dạng và cách thêm hành tinh: xem `content/english/README.md`.
 
 | Thành phần | Vị trí |
 |---|---|
@@ -33,7 +35,8 @@ Bấm vào hành tinh ở giữa carousel (hoặc ruy-băng tên khóa) để v�
 | Engine canvas, bản đồ, boss, thẻ câu hỏi (port nguyên văn) | `src/components/game/` |
 | Netlify Function `/api/game/*` (router dùng chung với route handler của Next) | `netlify/functions/game/game.mts`, `router.ts` |
 | Luật chơi, xu, giá trang phục | `src/lib/game/rules.ts`, `src/lib/game/skins.ts` |
-| Ngân hàng câu hỏi (chỉ function import — có đáp án) | `src/data/game/questions/` |
+| Câu hỏi gốc dạng CSV (sửa ở đây) | `content/english/*.csv` → `scripts/build-questions.mjs` |
+| Ngân hàng câu hỏi đã sinh (chỉ function import — có đáp án) | `src/data/game/questions/` (`generated/*.json`) |
 | Kiểu dữ liệu API, client fetch, kho hồ sơ phía trình duyệt | `src/lib/game/api-types.ts`, `client.ts`, `profile-store.ts` |
 
 Cách hoạt động:

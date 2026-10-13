@@ -1,18 +1,17 @@
 /**
- * Định dạng ngân hàng câu hỏi gọn để soạn tay.
- *  - Trắc nghiệm: ["m", "Đề bài", ["A", "B", "C", "D"], chỉ_số_đáp_án_đúng (0-3), "Giải thích"]
- *  - Đúng/Sai:    ["t", "Mệnh đề", true | false, "Giải thích"]
+ * Định dạng của generated/banks.json — do scripts/build-questions.mjs sinh từ content/english/<slug>.csv.
+ * Đừng sửa JSON bằng tay: sửa CSV rồi chạy `npm run questions`.
  */
-export type McqRow = ["m", string, [string, string, string, string], 0 | 1 | 2 | 3, string];
-export type TfRow = ["t", string, boolean, string];
-export type QuestionRow = McqRow | TfRow;
+export type GeneratedQuestion =
+  | { type: "MCQ"; prompt: string; options: [string, string, string, string]; correctIndex: 0 | 1 | 2 | 3; explanation: string }
+  | { type: "TRUE_FALSE"; prompt: string; correct: boolean; explanation: string };
 
 export interface LevelBank {
-  title: string; // tên level ngắn, vd "Làm quen máy tính"
-  questions: QuestionRow[]; // đúng 15 câu
+  title: string; // tên chủ đề trong cột "topic" của CSV
+  questions: GeneratedQuestion[];
 }
 
 export interface WorldBank {
   slug: string;
-  levels: [LevelBank, LevelBank, LevelBank, LevelBank, LevelBank];
+  levels: LevelBank[];
 }

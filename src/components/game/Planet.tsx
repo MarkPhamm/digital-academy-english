@@ -1,6 +1,9 @@
-/** Hành tinh vẽ bằng SVG: mỗi thế giới có bề mặt riêng, chung một kiểu chiếu sáng (sáng phía trên-trái). */
+import { getWorldMeta } from "@/lib/game/worlds";
+
+/** Hành tinh vẽ bằng SVG: bề mặt theo `look` của thế giới, màu phát sáng theo `color`, chung một kiểu chiếu sáng (sáng phía trên-trái). */
 export default function Planet({ slug, color, size = 170 }: { slug: string; color: string; size?: number }) {
   const id = `pl-${slug}`;
+  const look = getWorldMeta(slug)?.look ?? slug;
   return (
     <div className="planet" style={{ width: size, height: size }}>
       <svg viewBox="0 0 200 200" aria-hidden>
@@ -32,34 +35,34 @@ export default function Planet({ slug, color, size = 170 }: { slug: string; colo
             <stop offset="50%" stopColor="#ffe6b3" stopOpacity="0.95" />
             <stop offset="100%" stopColor="#f6d9a0" stopOpacity="0.15" />
           </linearGradient>
-          <PlanetBase slug={slug} id={id} />
+          <PlanetBase look={look} id={id} />
         </defs>
 
         <circle cx="100" cy="100" r="92" fill={`url(#${id}-glow)`} />
-        {slug === "toan-ly-hoa" && <RingBack id={id} />}
+        {look === "toan-ly-hoa" && <RingBack id={id} />}
 
         <g clipPath={`url(#${id}-c)`}>
           <circle cx="100" cy="100" r="68" fill={`url(#${id}-base)`} />
-          <Surface slug={slug} />
+          <Surface look={look} />
           <circle cx="100" cy="100" r="68" fill={`url(#${id}-shade)`} />
           <circle cx="100" cy="100" r="68" fill={`url(#${id}-spec)`} />
         </g>
         <circle cx="100" cy="100" r="68" fill={`url(#${id}-atmo)`} />
 
-        {slug === "toan-ly-hoa" && <RingFront id={id} />}
-        {slug !== "toan-ly-hoa" && <Moon slug={slug} />}
+        {look === "toan-ly-hoa" && <RingFront id={id} />}
+        {look !== "toan-ly-hoa" && <Moon look={look} />}
       </svg>
     </div>
   );
 }
 
-function PlanetBase({ slug, id }: { slug: string; id: string }) {
+function PlanetBase({ look, id }: { look: string; id: string }) {
   const stops =
-    slug === "ai-cong-nghe"
+    look === "ai-cong-nghe"
       ? ["#8f84ff", "#4a3fc4", "#1c1760"]
-      : slug === "toan-ly-hoa"
+      : look === "toan-ly-hoa"
         ? ["#ffc27a", "#e8782a", "#7a3414"]
-        : slug === "cyber-world"
+        : look === "cyber-world"
           ? ["#7df3ff", "#1fa3c9", "#0a3a63"]
           : ["#5fe0c4", "#1b8f9c", "#0b3a5e"];
   return (
@@ -71,8 +74,8 @@ function PlanetBase({ slug, id }: { slug: string; id: string }) {
   );
 }
 
-function Surface({ slug }: { slug: string }) {
-  if (slug === "ai-cong-nghe") {
+function Surface({ look }: { look: string }) {
+  if (look === "ai-cong-nghe") {
     // hành tinh "mạch điện": đường vĩ tuyến phát sáng + đèn thành phố
     return (
       <g>
@@ -96,7 +99,7 @@ function Surface({ slug }: { slug: string }) {
       </g>
     );
   }
-  if (slug === "toan-ly-hoa") {
+  if (look === "toan-ly-hoa") {
     // hành tinh khí: các dải mây và một cơn bão
     return (
       <g>
@@ -111,7 +114,7 @@ function Surface({ slug }: { slug: string }) {
       </g>
     );
   }
-  if (slug === "cyber-world") {
+  if (look === "cyber-world") {
     // hành tinh "mã nguồn": lưới phát sáng, dòng sông số và các nút mạng
     return (
       <g>
@@ -170,8 +173,8 @@ function RingFront({ id }: { id: string }) {
   );
 }
 
-function Moon({ slug }: { slug: string }) {
-  const [cx, cy, r] = slug === "ai-cong-nghe" ? [160, 48, 11] : slug === "cyber-world" ? [164, 150, 9] : [38, 156, 9];
+function Moon({ look }: { look: string }) {
+  const [cx, cy, r] = look === "ai-cong-nghe" ? [160, 48, 11] : look === "cyber-world" ? [164, 150, 9] : [38, 156, 9];
   return (
     <g>
       <defs>

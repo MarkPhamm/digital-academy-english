@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { GameLoading } from "@/components/game/GameShell";
-import { WORLD_META, isWorldSlug } from "@/lib/game/worlds";
+import { PLAYABLE_WORLDS, isWorldSlug } from "@/lib/game/worlds";
 import WorldClient from "./WorldClient";
 
 export const metadata = { title: "Bản đồ thế giới · Vũ trụ Tri thức" };
@@ -10,9 +10,9 @@ export const metadata = { title: "Bản đồ thế giới · Vũ trụ Tri th�
 // nên vẫn vào tức thì. Tắt kiểm tra "instant" của dev overlay cho segment này.
 export const instant = false;
 
-/** 4 thế giới cố định → prerender sẵn; slug lạ trả 404 thật (trước khi stream) nhờ notFound() ở ngoài Suspense. */
+/** Các thế giới cố định (WORLD_META) → prerender sẵn; slug lạ trả 404 thật (trước khi stream) nhờ notFound() ở ngoài Suspense. */
 export function generateStaticParams() {
-  return WORLD_META.map((w) => ({ slug: w.slug }));
+  return PLAYABLE_WORLDS.map((w) => ({ slug: w.slug }));
 }
 
 export default async function WorldPage({ params }: { params: Promise<{ slug: string }> }) {

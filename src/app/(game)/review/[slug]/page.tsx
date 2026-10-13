@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { GameLoading } from "@/components/game/GameShell";
-import { WORLD_META, isWorldSlug } from "@/lib/game/worlds";
+import { PLAYABLE_WORLDS, isWorldSlug } from "@/lib/game/worlds";
 import ReviewClient from "./ReviewClient";
 
 export const metadata = { title: "Ôn tập · Vũ trụ Tri thức" };
@@ -11,7 +11,7 @@ export const metadata = { title: "Ôn tập · Vũ trụ Tri thức" };
 export const instant = false;
 
 export function generateStaticParams() {
-  return WORLD_META.map((w) => ({ slug: w.slug }));
+  return PLAYABLE_WORLDS.map((w) => ({ slug: w.slug }));
 }
 
 export default async function ReviewPage({ params }: { params: Promise<{ slug: string }> }) {

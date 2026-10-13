@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import Stars from "@/components/game/Stars";
+import { getWorldMeta } from "@/lib/game/worlds";
 import { OverworldEngine, STOP_COLORS, type StationInfo, buildOverworld } from "./overworld";
 
 export type MapLevel = StationInfo & { id: string; plays: number; bestCorrect: number };
@@ -72,7 +73,7 @@ export default function WorldMap({ slug, avatarColor, skin, levels, questionsPer
     <div className="worldmap">
       <canvas ref={canvasRef} />
       <div className="wm-top">
-        <span className="wm-hint">Dùng ← ↑ ↓ → hoặc chạm để đi, leo dốc lên đồi{slug === "cyber-world" ? ", lội xuống sông để bơi 🏊, trèo thang lên nhà cây 🌳 (▲ lên, ▼ xuống)" : ""} · Nhấn E để vào nhà</span>
+        <span className="wm-hint">Dùng ← ↑ ↓ → hoặc chạm để đi, leo dốc lên đồi{getWorldMeta(slug)?.look === "cyber-world" ? ", lội xuống sông để bơi 🏊, trèo thang lên nhà cây 🌳 (▲ lên, ▼ xuống)" : ""} · Nhấn E để vào nhà</span>
         {currentIdx >= 0 && (
           <button className="btn btn-primary" onClick={() => engineRef.current?.walkTo(currentIdx)}>📍 Tới level của em</button>
         )}
