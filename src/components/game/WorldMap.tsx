@@ -47,6 +47,8 @@ export default function WorldMap({ slug, avatarColor, skin, levels, questionsPer
     });
     engineRef.current = engine;
     engine.start();
+    // Bấm Back từ màn chơi: Next hiện lại route này với state cũ (overlay "Đang vào level…" còn bật) → tắt đi.
+    setEntering(false);
     if (new URLSearchParams(window.location.search).has("e2e")) (window as unknown as { __vtMap: OverworldEngine }).__vtMap = engine;
     return () => {
       engine.destroy();

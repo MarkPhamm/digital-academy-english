@@ -141,7 +141,7 @@ export default function Game({
     setFinishing(true);
     engineRef.current?.setPaused(true);
     const r = await fetch(`/api/game/attempts/${data.attemptId}/finish`, { method: "POST" });
-    if (r.ok) router.push(`/result/${data.attemptId}`);
+    if (r.ok) router.replace(`/result/${data.attemptId}`);
     else {
       setFinishing(false);
       setToast("Không nộp được bài, em thử lại nhé.");
