@@ -35,7 +35,7 @@ export default function Game({
   const engineRef = useRef<GameEngine | null>(null);
   const startedRef = useRef(false);
   const [data, setData] = useState<StartData | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<{ title: string; message: string } | null>(null);
   const [answers, setAnswers] = useState<Record<number, Answer>>({});
   const [active, setActive] = useState<number | null>(null);
   const [selected, setSelected] = useState<number | null>(null);
@@ -57,10 +57,15 @@ export default function Game({
     fetch("/api/game/attempts", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(review ? { mode: "REVIEW", worldSlug } : { levelId }) })
       .then(async (r) => {
         const j = await r.json();
-        if (!r.ok) throw new Error(j.error ?? "Không bắt đầu được lượt chơi");
+        if (!r.ok) {
+          // Hết câu sai để ôn (409 NO_REVIEW) là tin vui, không phải lỗi.
+          const title = j.code === "NO_REVIEW" ? "Không còn câu cần ôn" : review ? "Chưa vào được ôn tập" : "Chưa vào được level";
+          setError({ title, message: j.error ?? "Không bắt đầu được lượt chơi" });
+          return;
+        }
         setData(j);
       })
-      .catch((e) => setError(e.message));
+      .catch((e) => setError({ title: review ? "Chưa vào được ôn tập" : "Chưa vào được level", message: e.message }));
   }, [levelId, review, worldSlug]);
 
   const answersRef = useRef(answers);
@@ -178,8 +183,8 @@ export default function Game({
     return (
       <main className="space-bg center-screen">
         <div className="result-card">
-          <h1 className="title-kid">Chưa vào được level</h1>
-          <p className="muted">{error}</p>
+          <h1 className="title-kid">{error.title}</h1>
+          <p className="muted">{error.message}</p>
           <div className="result-actions">
             <Link href={review ? "/" : `/world/${worldSlug}`} className="btn btn-primary btn-lg">{review ? "Về các thế giới" : "Về danh sách level"}</Link>
           </div>

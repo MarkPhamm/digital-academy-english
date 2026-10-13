@@ -4,7 +4,8 @@
  *  - questionId = `${slug}-L${n}-Q${i}`  (i = 1..15)
  * CHỈ Netlify Function được import file này: nó chứa đáp án đúng.
  */
-import { WORLD_META } from "../../../lib/game/worlds";
+import { LEVELS_PER_WORLD } from "../../../lib/game/rules";
+import { WORLD_META, levelId } from "../../../lib/game/worlds";
 import ai from "./ai-cong-nghe";
 import cyber from "./cyber-world";
 import english from "./tieng-anh";
@@ -37,7 +38,7 @@ export type BankWorld = {
   levels: BankLevel[];
 };
 
-export const levelId = (slug: string, n: number) => `${slug}-L${n}`;
+export { levelId };
 export const questionId = (slug: string, n: number, i: number) => `${slug}-L${n}-Q${i}`;
 
 const BANKS: WorldBank[] = [ai, math, english, cyber];
@@ -54,6 +55,7 @@ function buildWorlds(): BankWorld[] {
   return WORLD_META.map((meta) => {
     const bank = BANKS.find((b) => b.slug === meta.slug);
     if (!bank) throw new Error(`Thiếu ngân hàng câu hỏi cho thế giới ${meta.slug}`);
+    if (bank.levels.length !== LEVELS_PER_WORLD) throw new Error(`Thế giới ${meta.slug} phải có đúng ${LEVELS_PER_WORLD} level`);
     const levels: BankLevel[] = bank.levels.map((lv, li) => {
       const n = li + 1;
       return {

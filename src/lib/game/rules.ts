@@ -1,5 +1,7 @@
 /** Luật chơi — dùng chung cho Netlify Function và giao diện. Chỉ import tương đối (function không hiểu alias "@/"). */
 export const QUESTIONS_PER_LEVEL = 10;
+/** Mỗi thế giới có đúng 5 level (ngân hàng câu hỏi phải khớp). */
+export const LEVELS_PER_WORLD = 5;
 export const PASS_RATIO = 0.7; // đúng ≥ 70% thì qua level và mở level sau
 
 export function passMark(total: number): number {
