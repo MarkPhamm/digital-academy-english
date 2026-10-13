@@ -1,12 +1,11 @@
-import { getStore } from "@netlify/blobs";
 import { getLevel, getQuestion } from "../../../src/data/game/questions";
 import type { ApiErrorCode, AttemptMode } from "../../../src/lib/game/api-types";
 import { DEFAULT_SKIN, isSkinId } from "../../../src/lib/game/skins";
+import { getProfileStore } from "./store";
 
 // Hồ sơ game của mỗi học sinh là MỘT document JSON trong Netlify Blobs. Mọi thao tác (bắt đầu lượt, chấm câu,
 // nộp bài, mua skin) là một lần đọc-sửa-ghi có điều kiện theo etag, nên không bao giờ ghi "nửa chừng".
 
-const STORE_NAME = "game-profiles";
 const KEY_PREFIX = "v1/";
 const MAX_ATTEMPTS = 6;
 
@@ -142,9 +141,7 @@ export function normalizeProfile(raw: unknown, now: number): StoredProfile {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function store() {
-  return getStore({ name: STORE_NAME, consistency: "strong" });
-}
+const store = () => getProfileStore();
 
 function storageError(error: unknown): ApiError {
   console.error("[game] blobs", error);
@@ -154,7 +151,7 @@ function storageError(error: unknown): ApiError {
 /** Đọc hồ sơ; chưa có thì trả hồ sơ mới (không ghi). */
 export async function readProfile(userKey: string, now = Date.now()): Promise<StoredProfile> {
   try {
-    const entry = await store().getWithMetadata(KEY_PREFIX + userKey, { type: "json" });
+    const entry = await store().getWithMetadata(KEY_PREFIX + userKey);
     return normalizeProfile(entry?.data, now);
   } catch (error) {
     throw storageError(error);
@@ -178,7 +175,7 @@ export async function mutateProfile<T>(
     if (attempt > 0) await sleep(Math.random() * 50 * attempt);
     let entry: Awaited<ReturnType<typeof s.getWithMetadata>>;
     try {
-      entry = await s.getWithMetadata(key, { type: "json" });
+      entry = await s.getWithMetadata(key);
     } catch (error) {
       throw storageError(error);
     }

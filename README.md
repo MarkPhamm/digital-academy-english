@@ -31,7 +31,7 @@ Bấm vào hành tinh ở giữa carousel (hoặc ruy-băng tên khóa) để v�
 |---|---|
 | Các trang game `/world/:slug`, `/play/:levelId`, `/result/:id`, `/review/:slug`, `/skins` | `src/app/(game)/` (CSS riêng `game.css`, bọc dưới `.vt`) |
 | Engine canvas, bản đồ, boss, thẻ câu hỏi (port nguyên văn) | `src/components/game/` |
-| Netlify Function `/api/game/*` | `netlify/functions/game/game.mts` |
+| Netlify Function `/api/game/*` (router dùng chung với route handler của Next) | `netlify/functions/game/game.mts`, `router.ts` |
 | Luật chơi, xu, giá trang phục | `src/lib/game/rules.ts`, `src/lib/game/skins.ts` |
 | Ngân hàng câu hỏi (chỉ function import — có đáp án) | `src/data/game/questions/` |
 | Kiểu dữ liệu API, client fetch, kho hồ sơ phía trình duyệt | `src/lib/game/api-types.ts`, `client.ts`, `profile-store.ts` |
@@ -45,7 +45,7 @@ Cách hoạt động:
 - Sao, mở level, ôn câu sai giữ đúng luật repo gốc: đúng ≥ 7/10 là qua level, 7–8 = ★, 9 = ★★, 10 = ★★★; level sau mở khi level trước qua.
 - Mọi thao tác ghi dùng compare-and-swap theo etag của Blobs nên bấm hai lần / mở hai tab không cộng xu hay trừ xu hai lần.
 
-Chạy local vẫn qua `netlify dev` (game cần `/api/game/*`). Reset hồ sơ test: xoá thư mục `.netlify/blobs-serve` hoặc xoá cookie `da_device` trong trình duyệt.
+Chạy local: game chạy được cả với `npm run dev` trần (route handler `src/app/api/game/[...path]/route.ts` dùng chung bộ định tuyến `netlify/functions/game/router.ts`; không có Blobs thì hồ sơ lưu tạm ở `.netlify/blobs-dev/`) lẫn `netlify dev` (Blobs giả lập ở `.netlify/blobs-serve`). Reset hồ sơ test: xoá thư mục tương ứng hoặc xoá cookie `da_device` trong trình duyệt.
 
 ## Cấu hình trên Netlify
 
